@@ -71,5 +71,29 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             }
 
         }
+
+        public async void UpdateProduct(UpdateProductDto productDto)
+        {
+            string query = ("Update Product set Title=@ptitle,Price=@pprice,City=@pcity,District=@pDistrict,ProductCategory=@pcatname where ProductID=@pid");
+            var paramaters = new DynamicParameters();
+            paramaters.Add("@ptitle",productDto.Title);
+            paramaters.Add("@pprice", productDto.Price);
+            paramaters.Add("@pcity", productDto.City);
+            paramaters.Add("@pDistrict", productDto.District);
+            paramaters.Add("@pcatname", productDto.ProductCategory);
+            paramaters.Add("@pid", productDto.ProductID);
+
+
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query, paramaters);
+               
+            }
+
+
+
+
+
+        }
     }
 }

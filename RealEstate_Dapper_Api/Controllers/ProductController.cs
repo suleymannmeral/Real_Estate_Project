@@ -51,5 +51,13 @@ namespace RealEstate_Dapper_Api.Controllers
             _productRepository.DeleteProduct(id);
             return Ok("Ürün Başarılı Bir Şekilde Sİlindi");
         }
+        [HttpPut]
+
+        public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto)
+        {
+            _productRepository.UpdateProduct(updateProductDto);
+            return Ok("Ürün Başarıyla GÜncellendi");
+
+        }
     }
 }

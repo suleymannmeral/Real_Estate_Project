@@ -11,6 +11,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
         void CreateProduct(CreateProductDto productDto);
         void DeleteProduct(int id);
+        void UpdateProduct(UpdateProductDto productDto);
 
 
 
