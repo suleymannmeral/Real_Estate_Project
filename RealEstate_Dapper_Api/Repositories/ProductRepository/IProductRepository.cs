@@ -10,6 +10,8 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
         Task<List<ResultProductWithCategoryDto>> GetAllProductWithCategoryAsync();
 
         void CreateProduct(CreateProductDto productDto);
+        void DeleteProduct(int id);
+
 
 
 

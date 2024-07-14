@@ -34,6 +34,17 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             
         }
 
+        public async void DeleteProduct(int id)
+        {
+            string query = ("Delete from Product where ProductID=@productid");
+            var paramaters = new DynamicParameters();
+            paramaters.Add("@productid", id);
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query, paramaters);
+            }
+        }
+
         public async Task<List<ResultProductDto>> GetAllProductAsync()
         {
             string query = "Select * From Product";
