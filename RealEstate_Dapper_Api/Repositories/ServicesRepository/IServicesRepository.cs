@@ -6,7 +6,7 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
     public interface IServicesRepository
     {
        
-
+        Task <List<ResultServiceDto>> GetServicesAsync();
         void CreateServices(CreateServicesDto createServicesDto);
 
       

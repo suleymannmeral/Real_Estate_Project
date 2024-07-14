@@ -18,6 +18,14 @@ namespace RealEstate_Dapper_Api.Controllers
             _servicesRepository = servicesRepository;
         }
 
+        [HttpGet]
+
+        public async Task<IActionResult> ServicesList()
+        {
+            var values = await _servicesRepository.GetServicesAsync();
+            return Ok(values);
+        }
+
         [HttpPost]
 
         public async Task<IActionResult> CreateServices(CreateServicesDto createServicesDto)

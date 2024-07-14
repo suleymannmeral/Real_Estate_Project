@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using RealEstate_Dapper_Api.Dtos.ProductDtos;
 using RealEstate_Dapper_Api.Dtos.ServicesDto;
 using RealEstate_Dapper_Api.Dtos.WhoWeAreDto;
 using RealEstate_Dapper_Api.Models.DapperContext;
@@ -30,6 +31,17 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
 
         }
 
-      
+        public async Task<List<ResultServiceDto>> GetServicesAsync()
+        {
+            string query = "Select * From Services";
+
+            using (var connection = _context.CreateConnection())
+            {
+                var values = await connection.QueryAsync<ResultServiceDto>(query);
+                return values.ToList();
+
+            }
+
+        }
     }
 }
