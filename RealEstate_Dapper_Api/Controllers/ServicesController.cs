@@ -34,6 +34,14 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok("Servis Başarılı Bİr Şekilde Eklend");
         }
 
+        [HttpPut]
+        public async Task<IActionResult> UpdateServices(UpdateServicesDto updateServicesDto)
+        {
+            _servicesRepository.UpdateServices(updateServicesDto);
+            return Ok("Servis Başarıyla GÜncellendi");
+
+        }
+
 
     }
 }

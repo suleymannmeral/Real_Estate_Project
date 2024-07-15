@@ -8,6 +8,7 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
        
         Task <List<ResultServiceDto>> GetServicesAsync();
         void CreateServices(CreateServicesDto createServicesDto);
+        void UpdateServices(UpdateServicesDto updateServicesDto);
 
       
     }

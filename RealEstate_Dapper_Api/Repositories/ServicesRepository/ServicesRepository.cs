@@ -43,5 +43,20 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
             }
 
         }
+
+        public async void UpdateServices(UpdateServicesDto updateServicesDto)
+        {
+            string query = ("Update Services set ServiceName=@servicename,ServiceStatus=@servicestatus where ServiceID=@serviceid");
+            var parameters = new DynamicParameters();
+            parameters.Add("@servicename",updateServicesDto.ServiceName);
+            parameters.Add("@servicestatus", updateServicesDto.ServiceStatus);
+            parameters.Add("@serviceid", updateServicesDto.ServiceID);
+
+
+            using ( var connection = _context.CreateConnection())
+            {
+                var values = await connection.ExecuteAsync(query, parameters);
+            }
+        }
     }
 }
