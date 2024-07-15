@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/jNAEfa2QVBN6KWdl16wTDSU1HJOF4KAnoLejZfrnbs=",
+  "Hash": "uv2VzgcIzE6uQHkN4CT2u2QsbdcviGNNU5S/GIL03IE=",
   "Source": "RealEstate_Dapper_UI",
   "BasePath": "_content/RealEstate_Dapper_UI",
   "Mode": "Default",
@@ -3779,6 +3779,25 @@
       "OriginalItemSpec": "wwwroot\\starter\\assets\\images\\about1.jpg"
     },
     {
+      "Identity": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\as.jpg",
+      "SourceId": "RealEstate_Dapper_UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\",
+      "BasePath": "_content/RealEstate_Dapper_UI",
+      "RelativePath": "starter/assets/images/as.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\starter\\assets\\images\\as.jpg"
+    },
+    {
       "Identity": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\banner.jpg",
       "SourceId": "RealEstate_Dapper_UI",
       "SourceType": "Discovered",
@@ -4138,25 +4157,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\starter\\assets\\images\\p6.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\p7.jpg",
-      "SourceId": "RealEstate_Dapper_UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\",
-      "BasePath": "_content/RealEstate_Dapper_UI",
-      "RelativePath": "starter/assets/images/p7.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\starter\\assets\\images\\p7.jpg"
     },
     {
       "Identity": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\p8.jpg",
@@ -4651,6 +4651,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\starter\\images\\6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\images\\p7.jpg",
+      "SourceId": "RealEstate_Dapper_UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\",
+      "BasePath": "_content/RealEstate_Dapper_UI",
+      "RelativePath": "starter/images/p7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\starter\\images\\p7.jpg"
     },
     {
       "Identity": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\index.html",

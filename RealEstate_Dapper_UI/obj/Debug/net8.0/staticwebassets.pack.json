@@ -793,6 +793,10 @@
       "PackagePath": "staticwebassets\\starter\\assets\\images\\about1.jpg"
     },
     {
+      "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\as.jpg",
+      "PackagePath": "staticwebassets\\starter\\assets\\images\\as.jpg"
+    },
+    {
       "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\banner.jpg",
       "PackagePath": "staticwebassets\\starter\\assets\\images\\banner.jpg"
     },
@@ -867,10 +871,6 @@
     {
       "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\p6.jpg",
       "PackagePath": "staticwebassets\\starter\\assets\\images\\p6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\p7.jpg",
-      "PackagePath": "staticwebassets\\starter\\assets\\images\\p7.jpg"
     },
     {
       "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\assets\\images\\p8.jpg",
@@ -971,6 +971,10 @@
     {
       "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\images\\6.jpg",
       "PackagePath": "staticwebassets\\starter\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\images\\p7.jpg",
+      "PackagePath": "staticwebassets\\starter\\images\\p7.jpg"
     },
     {
       "Id": "C:\\Users\\suley\\source\\repos\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\starter\\index.html",

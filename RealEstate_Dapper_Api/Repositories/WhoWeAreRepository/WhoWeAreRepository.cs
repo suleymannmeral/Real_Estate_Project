@@ -76,10 +76,9 @@ namespace RealEstate_Dapper_Api.Repositories.WhoWeAreRepository
 
                 if (values == null)
                 {
-                    // Değeri null olan bir nesne dönebilir veya uygun bir mesajla hata fırlatabilirsiniz
+                    
                     throw new Exception("WhoWeAreDetail not found");
-                    // veya
-                    // return null;
+                   
                 }
 
                 return values;
