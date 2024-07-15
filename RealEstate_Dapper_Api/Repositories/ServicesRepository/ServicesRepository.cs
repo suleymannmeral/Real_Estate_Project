@@ -44,6 +44,18 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
 
         }
 
+        public Task<GetByIDServicesDto> GetServicesWithID(int id)
+        {
+            string query = ("Select * From Services where ServiceID=@serviceid");
+            var parameters = new DynamicParameters();
+            parameters.Add("@ServiceID", id);
+
+            using(var connection = _context.CreateConnection())
+            {
+                var value=connection.
+            }
+        }
+
         public async void UpdateServices(UpdateServicesDto updateServicesDto)
         {
             string query = ("Update Services set ServiceName=@servicename,ServiceStatus=@servicestatus where ServiceID=@serviceid");
