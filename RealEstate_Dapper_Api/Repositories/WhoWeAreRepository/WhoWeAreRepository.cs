@@ -64,6 +64,28 @@ namespace RealEstate_Dapper_Api.Repositories.WhoWeAreRepository
 
         }
 
+        public async Task<GetByIDWhoWeAreDto> GetWhoWeAre(int id)
+        {
+            string query = "SELECT * FROM WhoWeAreDetail WHERE WhoWeAreDetailID=@wwaid";
+            var parameters = new DynamicParameters();
+            parameters.Add("@wwaid", id);
+
+            using (var connection = _context.CreateConnection())
+            {
+                var values = await connection.QueryFirstOrDefaultAsync<GetByIDWhoWeAreDto>(query, parameters);
+
+                if (values == null)
+                {
+                    // Değeri null olan bir nesne dönebilir veya uygun bir mesajla hata fırlatabilirsiniz
+                    throw new Exception("WhoWeAreDetail not found");
+                    // veya
+                    // return null;
+                }
+
+                return values;
+            }
+        }
+
         public async void UpdateWhoWeAre(UpdateWhoWeAreDto whoWeAreDto)
         {
             string query = ("Update WhoWeAreDetail set Title=@title,Subtitle=@subtitle,Description1=@description1,Description2=@description2 where WhoWeAreDetailID=@whoweareid");

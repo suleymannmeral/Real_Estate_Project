@@ -13,6 +13,7 @@ namespace RealEstate_Dapper_Api.Repositories.WhoWeAreRepository
 
         void UpdateWhoWeAre(UpdateWhoWeAreDto whoWeAreDto);
 
+        Task<GetByIDWhoWeAreDto> GetWhoWeAre(int id);
 
     }
 }

@@ -23,9 +23,9 @@ namespace RealEstate_Dapper_Api.Controllers
 
         [HttpGet]
 
-      public async Task<IActionResult>WhoWeAreList()
+        public async Task<IActionResult> WhoWeAreList()
         {
-            var values= await _whoweareRepository.GetAllWhoWeAreAsync();
+            var values = await _whoweareRepository.GetAllWhoWeAreAsync();
             return Ok(values);
         }
 
@@ -44,11 +44,19 @@ namespace RealEstate_Dapper_Api.Controllers
         }
         [HttpPut]
 
-        public async Task<IActionResult>UpdateWhoWeAre(UpdateWhoWeAreDto whoWeAreDto)
+        public async Task<IActionResult> UpdateWhoWeAre(UpdateWhoWeAreDto whoWeAreDto)
         {
             _whoweareRepository.UpdateWhoWeAre(whoWeAreDto);
             return Ok("Güncelleme Başarılı");
 
+        }
+
+        [HttpGet("{id}")]
+
+        public async Task<IActionResult> GetWhoWeAre(int id)
+        {
+            var values = await _whoweareRepository.GetWhoWeAre(id);
+            return Ok(values);
         }
     }
 }
