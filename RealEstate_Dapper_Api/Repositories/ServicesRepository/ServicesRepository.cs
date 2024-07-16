@@ -44,17 +44,17 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
 
         }
 
-        public Task<GetByIDServicesDto> GetServicesWithID(int id)
-        {
-            string query = ("Select * From Services where ServiceID=@serviceid");
-            var parameters = new DynamicParameters();
-            parameters.Add("@ServiceID", id);
+        //public Task<GetByIDServicesDto> GetServicesWithID(int id)
+        //{
+        //    string query = ("Select * From Services where ServiceID=@serviceid");
+        //    var parameters = new DynamicParameters();
+        //    parameters.Add("@ServiceID", id);
 
-            using(var connection = _context.CreateConnection())
-            {
-                var value=connection.
-            }
-        }
+        //    using(var connection = _context.CreateConnection())
+        //    {
+        //        var value=connection.q
+        //    }
+        //}
 
         public async void UpdateServices(UpdateServicesDto updateServicesDto)
         {
