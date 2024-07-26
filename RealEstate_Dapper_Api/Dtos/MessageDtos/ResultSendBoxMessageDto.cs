@@ -1,6 +1,6 @@
 ﻿namespace RealEstate_Dapper_Api.Dtos.MessageDtos
 {
-    public class SendBoxMessageDto
+    public class ResultSendBoxMessageDto
     {
         public int MessageID { get; set; }
         public int Sender { get; set; }
