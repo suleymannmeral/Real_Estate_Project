@@ -1,9 +1,10 @@
-﻿namespace RealEstate_Dapper_Api.Dtos.MessageDtos
+﻿namespace RealEstate_Dapper_UI.Dtos.MessageDto
 {
     public class ResultSendBoxMessageDto
     {
         public int MessageID { get; set; }
-        public string  Name{ get; set; }
+       
+        public string Name { get; set; }
         public string Subject { get; set; }
         public string Detail { get; set; }
         public DateTime SendDate { get; set; }
