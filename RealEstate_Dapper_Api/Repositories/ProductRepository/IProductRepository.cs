@@ -13,6 +13,13 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
         void DeleteProduct(int id);
         void UpdateProduct(UpdateProductDto productDto);
 
+        void ProductDealOfTheDayStatusChangeTrue(int id);
+        void ProductDealOfTheDayStatusChangeFalse(int id);
+        Task<List<ResultLast5Product>> GetLast5ProductAsync();
+        Task<List<ResultProductAdvertListWithCategoryByEmployeeDto>> GetProductAdvertListByEmployeeAsyncByTrue(int id);
+
+
+
 
 
 

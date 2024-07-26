@@ -41,6 +41,19 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok("Servis Başarıyla GÜncellendi");
 
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteService(int id)
+        {
+            _servicesRepository.DeleteServices(id);
+            return Ok("Detail Başarılı Bİr Şekilde Silindi");
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetServiseById(int id)
+        {
+            var value = await _servicesRepository.GetServicesWithID(id);
+            return Ok(value);
+        }
+
 
 
     }

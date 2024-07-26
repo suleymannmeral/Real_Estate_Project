@@ -1,0 +1,95 @@
+﻿@model List<ResultChartDto>
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .chart {
+            max-width:500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chart-container">
+        <canvas id="myChart" class="chart"></canvas>
+        <canvas id="myChart2" class="chart"></canvas>
+    </div>
+
+    <script>
+        // Initialize empty arrays for the first chart
+        var xValues = [];
+        var yValues = [];
+        var barColors = ["#071952", "#088395", "#37B7C3", "orange", "brown"];
+
+        @foreach (var item in Model)
+        {
+            // Append city and count to the arrays
+            <text>
+                xValues.push("@item.City");
+            yValues.push(@item.CityCount);
+            </text>
+        }
+
+            // Create the first chart with the complete data
+            new Chart("myChart", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: "Şehir İlan İstatistikleri"
+                    }
+                }
+            });
+    </script>
+
+    <script>
+        // Initialize empty arrays for the second chart
+        var xValues1 = [];
+        var yValues1 = [];
+        var barColors1 = ["#071952", "#088395", "#37B7C3", "orange", "brown"];
+
+        @foreach (var item in Model)
+        {
+            // Append city and count to the arrays
+            <text>
+                xValues1.push("@item.City");
+            yValues1.push(@item.CityCount);
+            </text>
+        }
+
+            // Create the second chart with the complete data
+            new Chart("myChart2", {
+                type: "bar",
+                data: {
+                    labels: xValues1,
+                    datasets: [{
+                        backgroundColor: barColors1,
+                        data: yValues1
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: "Şehir İlan İstatistikleri"
+                    }
+                }
+            });
+    </script>
+
+</body>
+</html>

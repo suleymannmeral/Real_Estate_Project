@@ -26,8 +26,64 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/EstateAgent/Views/EstateAgentDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcRXN0YXRlQWdlbnREYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/EstateAgent/Views/LayoutEstateAgent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcTGF5b3V0RXN0YXRlQWdlbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/EstateAgent/Views/MyAdverds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcTXlBZHZlcmRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/BottomGridUi/CreateBottomGrid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm90dG9tR3JpZFVpXENyZWF0ZUJvdHRvbUdyaWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/BottomGridUi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm90dG9tR3JpZFVpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/BottomGridUi/UpdateBottomGrid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm90dG9tR3JpZFVpXFVwZGF0ZUJvdHRvbUdyaWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Category/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Category/UpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/DashBoard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/DefaultController1/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdENvbnRyb2xsZXIxXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Employee/CreateEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Employee/UpdateEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVXBkYXRlRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Home/Index.cshtml]
@@ -38,8 +94,84 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/PopularLocationUi/CreatePopularLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9wdWxhckxvY2F0aW9uVWlcQ3JlYXRlUG9wdWxhckxvY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/PopularLocationUi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9wdWxhckxvY2F0aW9uVWlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/PopularLocationUi/UpdatePopularLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9wdWxhckxvY2F0aW9uVWlcVXBkYXRlUG9wdWxhckxvY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Product/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Profile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/ServiceUi/CreateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVVpXENyZWF0ZVNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/ServiceUi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVVpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/ServiceUi/UpdateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVVpXFVwZGF0ZVNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_AdminLayoutFooterComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0Rm9vdGVyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_AdminLayoutHeadComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0SGVhZENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_AdminLayoutNavbarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0TmF2YmFyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_AdminLayoutScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2NyaXB0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_AdminLayoutSidebarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2lkZWJhckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_AdminLayoutSpinnerComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U3Bpbm5lckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_DashBoardLast4ContactComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rhc2hCb2FyZExhc3Q0Q29udGFjdENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_DashBoardLast5ProductComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rhc2hCb2FyZExhc3Q1UHJvZHVjdENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_DashBoardStatisticsComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rhc2hCb2FyZFN0YXRpc3RpY3NDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_DashBoardToDoListComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rhc2hCb2FyZFRvRG9MaXN0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_DefaultBottomGridComponentPartial/Default.cshtml]
@@ -82,6 +214,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRXaG9XZUFyZUNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_EstateAgentDashBoardChartComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0VzdGF0ZUFnZW50RGFzaEJvYXJkQ2hhcnRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_EstateAgentDashBoardStatisticComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0VzdGF0ZUFnZW50RGFzaEJvYXJkU3RhdGlzdGljQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_EstateAgentGetLast5ProductByEmployeeIdComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0VzdGF0ZUFnZW50R2V0TGFzdDVQcm9kdWN0QnlFbXBsb3llZUlkQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_EstateAgentLayoutSideBarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0VzdGF0ZUFnZW50TGF5b3V0U2lkZUJhckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_EstateAgentNavbarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0VzdGF0ZUFnZW50TmF2YmFyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/Components/_FooterViewComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Zvb3RlclZpZXdDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,6 +260,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/StatisticsUi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1VpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/WhoWeAreUi/CreateWhoWeAre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2hvV2VBcmVVaVxDcmVhdGVXaG9XZUFyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/WhoWeAreUi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2hvV2VBcmVVaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/WhoWeAreUi/UpdateWhoWeAre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2hvV2VBcmVVaVxVcGRhdGVXaG9XZUFyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/_ViewImports.cshtml]

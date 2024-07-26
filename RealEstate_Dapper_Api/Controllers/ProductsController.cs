@@ -9,12 +9,12 @@ namespace RealEstate_Dapper_Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ProductsController : ControllerBase
     {
        
             private readonly IProductRepository _productRepository;
 
-            public ProductController(IProductRepository productRepository)
+            public ProductsController(IProductRepository productRepository)
             {
                 _productRepository = productRepository;
             }
@@ -44,7 +44,7 @@ namespace RealEstate_Dapper_Api.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public async Task<IActionResult> DeleteProduct(int id)
         {
@@ -59,5 +59,45 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok("Ürün Başarıyla GÜncellendi");
 
         }
+        [HttpGet("ProductDealOfTheDayChangeToTrue/{id}")]
+        public async Task<IActionResult> ProductDealOfTheDayChangeToTrue(int id)
+        {
+           _productRepository.ProductDealOfTheDayStatusChangeTrue(id);
+
+            return Ok("ilan durumu  günün fırsatalarına eklendi");
+
+        }
+        [HttpGet("ProductDealOfTheDayChangeToFalse/{id}")]
+        public async Task<IActionResult> ProductDealOfTheDayChangeToFalse(int id)
+        {
+            _productRepository.ProductDealOfTheDayStatusChangeFalse(id);
+
+            return Ok("ilan durumu  günü fırsatlarından cıkarıldı");
+
+        }
+
+        [HttpGet("Last5Product")]
+        public async Task<IActionResult> GetLast5ProductList()
+        {
+           var values= await _productRepository.GetLast5ProductAsync();
+
+            return Ok(values);
+
+        }
+        [HttpGet("ProductAdvertsListByEmployeeByTrue")]
+        public async Task<IActionResult> ProductAdvertsListByEmployeeByTrue(int id)
+        {
+            var values = await _productRepository.GetProductAdvertListByEmployeeAsyncByTrue(id);
+            return Ok(values);
+        }
+
+
+
+
+
+
+
+
+
     }
 }

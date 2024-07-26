@@ -448,3 +448,12 @@ C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj
 C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper_UI.pdb
 C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper_UI.genruntimeconfig.cache
 C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\ref\RealEstate_Dapper_UI.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\libman.json
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

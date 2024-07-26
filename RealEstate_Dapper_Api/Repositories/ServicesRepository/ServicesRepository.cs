@@ -30,6 +30,18 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
 
 
         }
+     
+
+        public async void DeleteServices(int id)
+        {
+            string query = ("Delete from Services where ServiceID=@serviceid");
+            var paramaters = new DynamicParameters();
+            paramaters.Add("@serviceid", id);
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query,paramaters);
+            }
+        }
 
         public async Task<List<ResultServiceDto>> GetServicesAsync()
         {
@@ -44,18 +56,26 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
 
         }
 
-        //public Task<GetByIDServicesDto> GetServicesWithID(int id)
-        //{
-        //    string query = ("Select * From Services where ServiceID=@serviceid");
-        //    var parameters = new DynamicParameters();
-        //    parameters.Add("@ServiceID", id);
+        public async Task<GetByIDServicesDto> GetServicesWithID(int id)
+        {
+            string query = "SELECT * FROM Services where ServiceID=@sid";
+            var parameters = new DynamicParameters();
+            parameters.Add("@sid", id);
 
-        //    using(var connection = _context.CreateConnection())
-        //    {
-        //        var value=connection.q
-        //    }
-        //}
+            using (var connection = _context.CreateConnection())
+            {
+                var values = await connection.QueryFirstOrDefaultAsync<GetByIDServicesDto>(query, parameters);
 
+                if (values == null)
+                {
+
+                    throw new Exception("service not found");
+
+                }
+
+                return values;
+            }
+        }
         public async void UpdateServices(UpdateServicesDto updateServicesDto)
         {
             string query = ("Update Services set ServiceName=@servicename,ServiceStatus=@servicestatus where ServiceID=@serviceid");

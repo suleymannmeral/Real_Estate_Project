@@ -1,6 +1,6 @@
 ﻿namespace RealEstate_Dapper_Api.Dtos.BottomGridDtos
 {
-    public class GetBottomGridDto
+    public class GetBottomGridDtoByID
     {
         public int BottomGridID { get; set; }
         public string Icon { get; set; }
