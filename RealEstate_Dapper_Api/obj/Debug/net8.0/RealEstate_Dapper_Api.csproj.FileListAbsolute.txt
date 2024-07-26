@@ -136,3 +136,4 @@ C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_Api\ob
 C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\RealEstate_Dapper_Api.pdb
 C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\RealEstate_Dapper_Api.genruntimeconfig.cache
 C:\Users\suley\Documents\projects\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\ref\RealEstate_Dapper_Api.dll
+C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_Api\obj\Debug\net8.0\RealEstate_Dapper_Api.sourcelink.json
