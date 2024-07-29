@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using RealEstate_Dapper_Api.Dtos.CategoryDtos;
+using RealEstate_Dapper_Api.Dtos.ProductDetailDtos;
 using RealEstate_Dapper_Api.Dtos.ProductDtos;
 using RealEstate_Dapper_Api.Models.DapperContext;
 
@@ -42,7 +43,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             
         }
 
-        public async void DeleteProduct(int id)
+        public async Task DeleteProduct(int id)
         {
             string query = ("Delete from Product where ProductID=@productid");
             var paramaters = new DynamicParameters();
@@ -117,7 +118,39 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             }
         }
 
-        public async void ProductDealOfTheDayStatusChangeFalse(int id)
+        public async Task<GetProductByProductIdDto> GetProductByProductId(int id)
+        {
+            string query = "Select ProductID,Title,Price,City,District,CategoryName,CoverImage,Adress,Type,DealOfTheDay From Product inner join Category on Product.ProductCategory=Category.CategoryID where ProductID=@productid";
+            var parameters = new DynamicParameters();
+            parameters.Add("@productID", id);
+            using (var connection = _context.CreateConnection())
+            {
+
+                var values = await connection.QueryAsync<GetProductByProductIdDto>(query, parameters);
+                return values.FirstOrDefault();
+
+            }
+
+
+        }
+
+        public async Task<GetProductDetailByProductID> GetProductDetaByProductId(int id)
+        {
+            string query = "Select * From ProductDetails where ProductID=@productid";
+            var parameters = new DynamicParameters();
+            parameters.Add("@productID", id);
+            using (var connection = _context.CreateConnection())
+            {
+
+                var values = await connection.QueryAsync<GetProductDetailByProductID>(query, parameters);
+                return values.FirstOrDefault();
+
+            }
+
+
+        }
+
+        public async Task ProductDealOfTheDayStatusChangeFalse(int id)
         {
             string query = "Update Product Set DealOfTheDay=0 where ProductID=@productID";
             var parameters = new DynamicParameters();
@@ -128,7 +161,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             }
         }
 
-        public async void ProductDealOfTheDayStatusChangeTrue(int id)
+        public async Task ProductDealOfTheDayStatusChangeTrue(int id)
         {
             string query = "Update Product Set DealOfTheDay=1 where ProductID=@productID";
             var parameters = new DynamicParameters();
@@ -139,7 +172,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             }
         }
 
-        public async void UpdateProduct(UpdateProductDto productDto)
+        public async Task UpdateProduct(UpdateProductDto productDto)
         {
             string query = ("Update Product set Title=@ptitle,Price=@pprice,City=@pcity,District=@pDistrict,ProductCategory=@pcatname where ProductID=@pid");
             var paramaters = new DynamicParameters();

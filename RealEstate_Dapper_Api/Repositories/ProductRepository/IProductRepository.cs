@@ -1,4 +1,5 @@
 ﻿using RealEstate_Dapper_Api.Dtos.CategoryDtos;
+using RealEstate_Dapper_Api.Dtos.ProductDetailDtos;
 using RealEstate_Dapper_Api.Dtos.ProductDtos;
 
 namespace RealEstate_Dapper_Api.Repositories.ProductRepository
@@ -10,14 +11,17 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
         Task<List<ResultProductWithCategoryDto>> GetAllProductWithCategoryAsync();
 
         Task CreateProduct(CreateProductDto productDto);
-        void DeleteProduct(int id);
-        void UpdateProduct(UpdateProductDto productDto);
+        Task DeleteProduct(int id);
+        Task UpdateProduct(UpdateProductDto productDto);
 
-        void ProductDealOfTheDayStatusChangeTrue(int id);
-        void ProductDealOfTheDayStatusChangeFalse(int id);
+        Task ProductDealOfTheDayStatusChangeTrue(int id);
+        Task ProductDealOfTheDayStatusChangeFalse(int id);
         Task<List<ResultLast5Product>> GetLast5ProductAsync();
         Task<List<ResultProductAdvertListWithCategoryByEmployeeDto>> GetProductAdvertListByEmployeeAsyncByTrue(int id);
         Task<List<ResultProductAdvertListWithCategoryByEmployeeDto>> GetProductAdvertListByEmployeeAsyncByFalse(int id);
+
+        Task<GetProductByProductIdDto>GetProductByProductId(int id);
+        Task<GetProductDetailByProductID>GetProductDetaByProductId(int id);
 
 
 

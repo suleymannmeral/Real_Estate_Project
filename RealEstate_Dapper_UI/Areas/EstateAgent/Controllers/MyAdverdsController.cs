@@ -5,6 +5,7 @@ using RealEstate_Dapper_UI.Dtos.CategoryDtos;
 using RealEstate_Dapper_UI.Dtos.ProductDtos;
 using RealEstate_Dapper_UI.Services;
 using System.Net.Http;
+using System.Text;
 
 namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
 {
@@ -68,10 +69,24 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> CreateAdvert(string a)
+        public async Task<IActionResult> CreateAdvert(CreateProductDto createProductDto)
         {
-         
-            return View();  
+            createProductDto.DealOfTheDay=false;
+            createProductDto.advertDate=DateTime.Now;
+            createProductDto.ProductStatus = true;
+            var userıd = _loginService.GetUserId;
+            createProductDto.EmployeeID = int.Parse(userıd);
+
+
+            var client = _httpClientFactory.CreateClient();
+            var jsondata = JsonConvert.SerializeObject(createProductDto); // listeleme islemelrinde deserialize put post islemlerinde serialized
+            StringContent content = new StringContent(jsondata, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PostAsync("https://localhost:44382/api/Products", content);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
 
         }
 

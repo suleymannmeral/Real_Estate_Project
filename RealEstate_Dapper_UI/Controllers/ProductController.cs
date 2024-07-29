@@ -48,6 +48,8 @@ namespace RealEstate_Dapper_UI.Controllers
             
 
         }
+
+
         public async Task<IActionResult> ProductDealOfTheDayStatusChangeToFalse(int id)
         {
             var client = _httpClientFactory.CreateClient();
