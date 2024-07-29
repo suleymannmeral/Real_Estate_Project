@@ -14,17 +14,25 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             _context = context;
         }
 
-        public async void CreateProduct(CreateProductDto productDto)
+        public async Task CreateProduct(CreateProductDto productDto)
         {
 
            
-                string query = "insert into Product (Title,Price,City,District,ProductCategory) values (@productTitle,@productPrice,@productCity,@productDistrict,@productCategory)";
+                string query = "insert into Product (Title,Price,City,District,CoverImage,Adress,Description,Type,DealOfTheDay,advertDate,ProductStatus,ProductCategory,EmployeeID) values (@productTitle,@productPrice,@productCity,@productDistrict,@coverimage,@adress,@desc,@type,@dealoftheday,@advertdate,@productstatus,@productcategory,@employeid)";
                 var paramaters = new DynamicParameters();
             paramaters.Add("@productTitle", productDto.Title);
             paramaters.Add("@productPrice", productDto.Price);
             paramaters.Add("@productCity", productDto.City);
             paramaters.Add("@productDistrict", productDto.District);
-            paramaters.Add("@productCategory", productDto.ProductCategory);
+            paramaters.Add("@coverimage", productDto.CoverImage);
+            paramaters.Add("@adress", productDto.Adress);
+            paramaters.Add("@desc", productDto.Description);
+            paramaters.Add("@type", productDto.Type);
+            paramaters.Add("@dealoftheday", productDto.DealOfTheDay);
+            paramaters.Add("@advertdate", productDto.advertDate);
+            paramaters.Add("@productstatus", productDto.ProductStatus);
+            paramaters.Add("@productcategory", productDto.ProductCategory);
+            paramaters.Add("@employeid", productDto.EmployeeID);
 
             using (var conenction = _context.CreateConnection())
                 {
@@ -154,5 +162,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
 
         }
+
+       
     }
 }

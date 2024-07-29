@@ -39,7 +39,7 @@ namespace RealEstate_Dapper_Api.Controllers
 
         public async Task<IActionResult> CreateProduct(CreateProductDto createProductDto)
         {
-            _productRepository.CreateProduct(createProductDto);
+           await _productRepository.CreateProduct(createProductDto);
             return Ok("Ürün Başarılı Bİr Şekilde Eklend");
         }
 
