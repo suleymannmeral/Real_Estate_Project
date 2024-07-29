@@ -98,7 +98,13 @@ namespace RealEstate_Dapper_Api.Controllers
         }
 
 
-       
+
+        [HttpGet("getProductByProductID")]
+        public async Task<IActionResult> GetProductDetailByProductID(int id)
+        {
+            var values = await _productRepository.GetProductByProductId(id);
+            return Ok(values);
+        }
 
 
 

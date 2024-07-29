@@ -14,6 +14,7 @@
             public string categoryName { get; set; }
         public string categoryID { get; set; }
         public bool DealOfTheDay { get; set; }
+        public DateTime advertDate{ get; set; }
         
 
 
