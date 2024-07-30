@@ -59,7 +59,9 @@ namespace RealEstate_Dapper_UI.Controllers
                 ViewBag.bedroomcount = values2.BedRoomCount;
                 ViewBag.size = values2.ProductSize;
                 ViewBag.date = values.advertDate;
-            ViewBag.desc = values.Description;
+                ViewBag.location = values2.Location;
+                ViewBag.desc = values.Description;
+                ViewBag.video = values2.VideoUrl;
             DateTime datetime1 = DateTime.Now;
             DateTime datetime2=values.advertDate;
             TimeSpan timespan=datetime1 - datetime2;
