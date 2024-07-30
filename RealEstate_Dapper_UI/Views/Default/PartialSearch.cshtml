@@ -1,11 +1,4 @@
-﻿@model List<ResultCategoryDto>
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
-}
-
-
-
+﻿@model  List<ResultCategoryDto>
 <section class="w3l-cover-3">
     <div class="cover top-bottom">
         <div class="container">
@@ -22,20 +15,20 @@
                         </ul>
                     </div>
                     <form asp-action="PartialSearch" asp-controller="Default" class="w3l-cover-3-gd" method="post">
-                        <input type="search" name="searchKeyValue" placeholder="Enter keywords" required>
+                        <input type="search" name="p" placeholder="Enter keywords" required>
                         <span class="input-group-btn">
-                            <select class="btn btn-default" name="propertyCategoryId" required>
+                            <select class="btn btn-default" name="ext" required>
                                 <option selected="">Gayrimenkul Türü</option>
-                                @foreach (var item in Model)
+                                @foreach(var item in Model)
                                 {
                                     <option value="@item.CategoryId">@item.CategoryName</option>
                                 }
-
-
+                               
+                            
                             </select>
                         </span>
                         <span class="input-group-btn">
-                            <select class="btn btn-default" name="city" required>
+                            <select class="btn btn-default" name="ext" required>
                                 <option selected="">Select Country</option>
                                 <option>Australia</option>
                                 <option>London</option>
@@ -44,8 +37,6 @@
                                 <option>Saudi Arabia</option>
                                 <option>America</option>
                                 <option>Srilanka</option>
-                                <option>aksaray</option>
-                                <option>aydin</option>
                             </select>
                         </span>
                         <button type="submit" class="btn-primary">Search</button>
@@ -58,16 +49,4 @@
         </div>
     </div>
 </section>
-
-
-@await Component.InvokeAsync("_DefaultHomePageProductList")
-@await Component.InvokeAsync("_DefaultWhoWeAreComponentPartial")
-@await Component.InvokeAsync("_DefaultBottomGridComponentPartial")
-@await Component.InvokeAsync("_DefaultProductListExploreCitiesComponentPartial")
-@await Component.InvokeAsync("_DefaultOurClientsComponentPartial")
-@await Component.InvokeAsync("_DefaultSubFeatureComponentPartial")
-@await Component.InvokeAsync("_DefaultDealsOfTheDayComponentPartial")
-@await Component.InvokeAsync("_DefaultBrandsComponentPartial")
-
-
 
