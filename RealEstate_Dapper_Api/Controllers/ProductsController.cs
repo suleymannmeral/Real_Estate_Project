@@ -123,6 +123,14 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(values);
         }
 
+               
+        [HttpGet("ResultLast3ProductWithCategory")]
+        public async Task<IActionResult> ResultLast3ProductWithCategoryAsync()
+        {
+            var values = await _productRepository.GetLast3ProductAsync();
+            return Ok(values);
+        }
+
 
 
 
