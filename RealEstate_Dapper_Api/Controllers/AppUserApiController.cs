@@ -13,7 +13,7 @@ namespace RealEstate_Dapper_Api.Controllers
         public AppUserApiController(IAppUserRepository appuserRepository)
         {
             _appuserRepository = appuserRepository;
-        }
+        } 
         [HttpGet]
         public async Task<IActionResult> GetAppUserByProductID(int id)
         {
