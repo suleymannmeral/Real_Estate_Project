@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using RealEstate_Dapper_UI.Dtos.ProductDtos;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace RealEstate_Dapper_UI.Controllers
 {
@@ -50,6 +51,7 @@ namespace RealEstate_Dapper_UI.Controllers
         }
 
 
+
         public async Task<IActionResult> ProductDealOfTheDayStatusChangeToFalse(int id)
         {
             var client = _httpClientFactory.CreateClient();
@@ -69,6 +71,47 @@ namespace RealEstate_Dapper_UI.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+        }
+        public async Task<IActionResult> DeleteProduct(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var reponseMessage = await client.DeleteAsync("https://localhost:44382/api/Products/" + id);
+            if (reponseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+        [HttpGet]
+        public async Task<IActionResult> UpdateProduct(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"https://localhost:44382/api/Products/getProductByProductID?id={id}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<UpdateProductDto>(jsonData);
+                return View(values);
+            }
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(updateProductDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PutAsync($"https://localhost:44382/api/Products/", stringContent);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                var errorResponse = await responseMessage.Content.ReadAsStringAsync();
+                ViewData["Error"] = $"Update operation failed: {errorResponse}";
+                return View(updateProductDto);
+            }
         }
 
 

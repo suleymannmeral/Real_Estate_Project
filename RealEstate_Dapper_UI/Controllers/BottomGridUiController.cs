@@ -33,7 +33,7 @@ namespace RealEstate_Dapper_UI.Controllers
         public async Task<IActionResult> DeleteBottomGrid(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var reponseMessage = await client.DeleteAsync($"https://localhost:44382/api/BottomGrid/{id}");
+            var reponseMessage = await client.DeleteAsync("https://localhost:44382/api/BottomGrid/"+id);
             if (reponseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");

@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using RealEstate_Dapper_Api.Dtos.BottomGridDtos;
 using RealEstate_Dapper_Api.Dtos.CategoryDtos;
 using RealEstate_Dapper_Api.Dtos.ProductDetailDtos;
 using RealEstate_Dapper_Api.Dtos.ProductDtos;
@@ -45,12 +46,24 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
         public async Task DeleteProduct(int id)
         {
+            string query4 = ("Delete from PropertyAmenity where PropertyID=@productid");
+            string query3 = ("Delete from ProductDetails where ProductID=@productid");
+           
+            string query2 = ("Delete from ProductImage where ProductID=@productid");
+          
+
             string query = ("Delete from Product where ProductID=@productid");
             var paramaters = new DynamicParameters();
             paramaters.Add("@productid", id);
             using (var connection = _context.CreateConnection())
             {
+                await connection.ExecuteAsync(query3, paramaters);
+                await connection.ExecuteAsync(query2, paramaters);
+                await connection.ExecuteAsync(query4, paramaters);
                 await connection.ExecuteAsync(query, paramaters);
+               
+            
+             
             }
         }
 
@@ -70,7 +83,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
         public async Task<List<ResultProductWithCategoryDto>> GetAllProductWithCategoryAsync()
         {
-            string query = "Select ProductID,Title,Price,City,District,CategoryName,CoverImage,Adress,Type,DealOfTheDay From Product inner join Category on Product.ProductCategory=Category.CategoryID";
+            string query = "Select ProductID,Title,Price,City,District,CategoryName,CoverImage,Adress,Type,DealOfTheDay,SlugUrl From Product inner join Category on Product.ProductCategory=Category.CategoryID";
 
             using (var connection = _context.CreateConnection())
             {
@@ -120,7 +133,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
         public async Task<List<ResultProductAdvertListWithCategoryByEmployeeDto>> GetProductAdvertListByEmployeeAsyncByTrue(int id)
         {
-            string query = "Select ProductID,Title,Price,City,District,CategoryName,CoverImage,Type,Adress,DealOfTheDay From Product inner join Category on Product.ProductCategory=Category.CategoryID where EmployeeID=@employeeId and ProductStatus=1  ";
+            string query = "Select ProductID,Title,Price,City,District,CategoryName,CoverImage,Type,Adress,DealOfTheDay From Product inner join Category on Product.ProductCategory=Category.CategoryID where UserID=@employeeId and ProductStatus=1  ";
             var parameters = new DynamicParameters();
             parameters.Add("@employeeId", id);
             using (var connection = _context.CreateConnection())
@@ -172,6 +185,27 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             }
 
 
+        }
+
+        public async Task<ResultProductWithCategoryDto> GetProductWithID(int id)
+        {
+            string query = "SELECT * FROM Product WHERE ProductID=@botid";
+            var parameters = new DynamicParameters();
+            parameters.Add("@botid", id);
+
+            using (var connection = _context.CreateConnection())
+            {
+                var values = await connection.QueryFirstOrDefaultAsync<ResultProductWithCategoryDto>(query, parameters);
+
+                if (values == null)
+                {
+
+                    throw new Exception("product not found");
+
+                }
+
+                return values;
+            }
         }
 
         public async Task ProductDealOfTheDayStatusChangeFalse(int id)
@@ -236,6 +270,5 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
         }
 
-       
     }
 }

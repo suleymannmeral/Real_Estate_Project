@@ -16,13 +16,19 @@ namespace RealEstate_Dapper_Api.Controllers
                 _productRepository = productRepository;
             }
 
-            [HttpGet]
+       
 
-            public async Task<IActionResult> ProductList()
-            {
-                var values = await _productRepository.GetAllProductAsync();
-                return Ok(values);
-            }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProductById(int id)
+        {
+            var value = await _productRepository.GetProductWithID(id);
+            return Ok(value);
+        }
+
+
+
+
+
 
         [HttpGet("ProductListWithCategory")]
 
@@ -128,10 +134,7 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(values);
         }
 
-
-
-
-
+     
 
 
 

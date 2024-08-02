@@ -1,4 +1,5 @@
-﻿using RealEstate_Dapper_Api.Dtos.CategoryDtos;
+﻿using RealEstate_Dapper_Api.Dtos.BottomGridDtos;
+using RealEstate_Dapper_Api.Dtos.CategoryDtos;
 using RealEstate_Dapper_Api.Dtos.ProductDetailDtos;
 using RealEstate_Dapper_Api.Dtos.ProductDtos;
 
@@ -25,6 +26,9 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
         Task<List<ResultProductWithSearchListDto>> ResultProductWithSearchList(string searchKeyValue,int propertyCategoryId, string city);
         Task<List<ResultProductWithCategoryDto>> GetProductByDealOfTheDayTrueCategoryAsync();
         Task<List<ResultLast3ProductWithCategoryDto>> GetLast3ProductAsync();
+        Task<ResultProductWithCategoryDto> GetProductWithID(int id);
+
+
 
 
 
