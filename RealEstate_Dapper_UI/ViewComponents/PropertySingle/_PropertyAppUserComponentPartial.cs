@@ -9,19 +9,19 @@ namespace RealEstate_Dapper_UI.ViewComponents.PropertySingle
     public class _PropertyAppUserComponentPartial:ViewComponent
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        private readonly ILoginService _loginService;
 
 
-        public _PropertyAppUserComponentPartial(IHttpClientFactory httpClientFactory, ILoginService loginService)
+
+        public _PropertyAppUserComponentPartial(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
-            _loginService = loginService;
+           
 
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(int id)
         {
-            var id = _loginService.GetUserId;
+          
 
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:44382/api/AppUserApi?id="+id);

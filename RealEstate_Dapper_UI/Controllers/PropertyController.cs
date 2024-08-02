@@ -58,7 +58,7 @@ namespace RealEstate_Dapper_UI.Controllers
 
         public async Task<IActionResult> PropertySingle(int id)
         {
-            id = 29;
+            ViewBag.i = id;
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:44382/api/Products/getProductByProductID?id="+id);
             var responseMessage2 = await client.GetAsync("https://localhost:44382/api/ProductDetailsApi/getProductDetailByID?id=" + id);
@@ -68,6 +68,7 @@ namespace RealEstate_Dapper_UI.Controllers
               
                 var values = JsonConvert.DeserializeObject<ResultProductDto>(jsonData);
                 var values2 = JsonConvert.DeserializeObject<GetProductDetailByIdDto>(jsonData2);
+            ViewBag.estateID=values.UserID;
                 ViewBag.title1 = values.title;
                 ViewBag.productId = values.productID;
                 ViewBag.roomCount = values2.RoomCount;

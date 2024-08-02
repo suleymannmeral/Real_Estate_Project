@@ -15,6 +15,7 @@
         public string CoverImage { get; set; }
         public bool DealOfTheDay { get; set; }
         public DateTime advertDate { get; set; }
+        public int UserID{ get; set; }
 
     }
 }
