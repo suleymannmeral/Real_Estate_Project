@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealEstate_Dapper_Api.Repositories.CategoryRepository;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_Api.Repositories.EstateAgentRepositories.DashBoardRepositories.ChartRepositories;
 
 namespace RealEstate_Dapper_Api.Controllers

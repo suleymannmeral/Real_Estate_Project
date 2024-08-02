@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealEstate_Dapper_Api.Dtos.ProductDtos;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_Api.Dtos.ServicesDto;
-using RealEstate_Dapper_Api.Repositories.ProductRepository;
 using RealEstate_Dapper_Api.Repositories.ServicesRepository;
 
 namespace RealEstate_Dapper_Api.Controllers
@@ -30,21 +27,21 @@ namespace RealEstate_Dapper_Api.Controllers
 
         public async Task<IActionResult> CreateServices(CreateServicesDto createServicesDto)
         {
-            _servicesRepository.CreateServices(createServicesDto);
+           await _servicesRepository.CreateServices(createServicesDto);
             return Ok("Servis Başarılı Bİr Şekilde Eklend");
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdateServices(UpdateServicesDto updateServicesDto)
         {
-            _servicesRepository.UpdateServices(updateServicesDto);
+          await  _servicesRepository.UpdateServices(updateServicesDto);
             return Ok("Servis Başarıyla GÜncellendi");
 
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteService(int id)
         {
-            _servicesRepository.DeleteServices(id);
+           await _servicesRepository.DeleteServices(id);
             return Ok("Detail Başarılı Bİr Şekilde Silindi");
         }
         [HttpGet("{id}")]

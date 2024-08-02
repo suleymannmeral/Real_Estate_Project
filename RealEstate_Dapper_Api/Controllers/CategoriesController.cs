@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_Api.Dtos.CategoryDtos;
 using RealEstate_Dapper_Api.Repositories.CategoryRepository;
 
@@ -27,7 +26,7 @@ namespace RealEstate_Dapper_Api.Controllers
 
         public async Task<IActionResult>CreateCategory(CreateCategoryDto createCategoryDto)
         {
-             _categoryRepository.CreateCategory(createCategoryDto);
+            await _categoryRepository.CreateCategory(createCategoryDto);
             return Ok("Kategori Başarılı Bİr Şekilde Eklend");
         }
        
@@ -42,7 +41,7 @@ namespace RealEstate_Dapper_Api.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
         {
-            _categoryRepository.UpdateCategory(updateCategoryDto);
+           await _categoryRepository.UpdateCategory(updateCategoryDto);
             return Ok("Kategori Başarılı Bir Şekilde Güncellendi");
         }
 

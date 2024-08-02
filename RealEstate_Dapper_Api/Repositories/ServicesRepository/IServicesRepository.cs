@@ -7,10 +7,10 @@ namespace RealEstate_Dapper_Api.Repositories.ServicesRepository
     {
        
         Task <List<ResultServiceDto>> GetServicesAsync();
-        void CreateServices(CreateServicesDto createServicesDto);
-        void UpdateServices(UpdateServicesDto updateServicesDto);
+        Task CreateServices(CreateServicesDto createServicesDto);
+        Task UpdateServices(UpdateServicesDto updateServicesDto);
         Task<GetByIDServicesDto> GetServicesWithID(int id);
-        void DeleteServices(int id );
+        Task DeleteServices(int id );
 
 
 

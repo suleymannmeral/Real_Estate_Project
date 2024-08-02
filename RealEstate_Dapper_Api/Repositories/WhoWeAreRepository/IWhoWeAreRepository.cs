@@ -8,10 +8,10 @@ namespace RealEstate_Dapper_Api.Repositories.WhoWeAreRepository
     {
         Task<List<ResultWhoWeAreDto>> GetAllWhoWeAreAsync();
 
-        void CreateWhoWeAre(CreateWhoWeAreDto whoWeAreDto);
-        void DeleteWhoWeAre(int id);
+        Task CreateWhoWeAre(CreateWhoWeAreDto whoWeAreDto);
+        Task DeleteWhoWeAre(int id);
 
-        void UpdateWhoWeAre(UpdateWhoWeAreDto whoWeAreDto);
+        Task UpdateWhoWeAre(UpdateWhoWeAreDto whoWeAreDto);
 
         Task<GetByIDWhoWeAreDto> GetWhoWeAre(int id);
 

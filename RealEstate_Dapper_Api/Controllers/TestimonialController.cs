@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_Api.Dtos.TestimonialDtos;
-using RealEstate_Dapper_Api.Dtos.WhoWeAreDto;
-using RealEstate_Dapper_Api.Repositories.CategoryRepository;
 using RealEstate_Dapper_Api.Repositories.TestimonialRepository;
 
 namespace RealEstate_Dapper_Api.Controllers
@@ -32,21 +29,21 @@ namespace RealEstate_Dapper_Api.Controllers
 
         public async Task<IActionResult> CreateWhoWeAre(CreateTestimonialDto createTestimonialDto)
         {
-            _testimonialrepository.CreateTestimonial(createTestimonialDto);
+           await _testimonialrepository.CreateTestimonial(createTestimonialDto);
             return Ok("Testimonial Başarılı Bİr Şekilde Eklend");
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteTestimonial(int id)
         {
-            _testimonialrepository.DeleteTestimonial(id);
+            await _testimonialrepository.DeleteTestimonial(id);
             return Ok("Testimonial Başarılı Bİr Şekilde Silindi");
         }
         [HttpPut]
 
         public async Task<IActionResult> UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto)
         {
-            _testimonialrepository.UpdateTestimonial(updateTestimonialDto);
+          await  _testimonialrepository.UpdateTestimonial(updateTestimonialDto);
             return Ok("Güncelleme Başarılı");
 
         }

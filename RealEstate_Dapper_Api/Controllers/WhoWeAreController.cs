@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealEstate_Dapper_Api.Dtos.ProductDtos;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_Api.Dtos.WhoWeAreDto;
-using RealEstate_Dapper_Api.Repositories.ProductRepository;
 using RealEstate_Dapper_Api.Repositories.WhoWeAreRepository;
 
 namespace RealEstate_Dapper_Api.Controllers
@@ -33,20 +30,20 @@ namespace RealEstate_Dapper_Api.Controllers
 
         public async Task<IActionResult> CreateWhoWeAre(CreateWhoWeAreDto whoWeAreDto)
         {
-            _whoweareRepository.CreateWhoWeAre(whoWeAreDto);
+            await _whoweareRepository.CreateWhoWeAre(whoWeAreDto);
             return Ok("Detail Başarılı Bİr Şekilde Eklend");
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteWhoWeAre(int id)
         {
-            _whoweareRepository.DeleteWhoWeAre(id);
+           await _whoweareRepository.DeleteWhoWeAre(id);
             return Ok("Detail Başarılı Bİr Şekilde Silindi");
         }
         [HttpPut]
 
         public async Task<IActionResult> UpdateWhoWeAre(UpdateWhoWeAreDto whoWeAreDto)
         {
-            _whoweareRepository.UpdateWhoWeAre(whoWeAreDto);
+           await _whoweareRepository.UpdateWhoWeAre(whoWeAreDto);
             return Ok("Güncelleme Başarılı");
 
         }

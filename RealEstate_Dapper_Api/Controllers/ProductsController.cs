@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealEstate_Dapper_Api.Dtos.CategoryDtos;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_Api.Dtos.ProductDtos;
-using RealEstate_Dapper_Api.Repositories.CategoryRepository;
 using RealEstate_Dapper_Api.Repositories.ProductRepository;
 
 namespace RealEstate_Dapper_Api.Controllers
@@ -48,21 +45,21 @@ namespace RealEstate_Dapper_Api.Controllers
 
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            _productRepository.DeleteProduct(id);
+           await _productRepository.DeleteProduct(id);
             return Ok("Ürün Başarılı Bir Şekilde Sİlindi");
         }
         [HttpPut]
 
         public async Task<IActionResult> UpdateProduct(UpdateProductDto updateProductDto)
         {
-            _productRepository.UpdateProduct(updateProductDto);
+           await _productRepository.UpdateProduct(updateProductDto);
             return Ok("Ürün Başarıyla GÜncellendi");
 
         }
         [HttpGet("ProductDealOfTheDayChangeToTrue/{id}")]
         public async Task<IActionResult> ProductDealOfTheDayChangeToTrue(int id)
         {
-           _productRepository.ProductDealOfTheDayStatusChangeTrue(id);
+           await _productRepository.ProductDealOfTheDayStatusChangeTrue(id);
 
             return Ok("ilan durumu  günün fırsatalarına eklendi");
 
@@ -70,7 +67,7 @@ namespace RealEstate_Dapper_Api.Controllers
         [HttpGet("ProductDealOfTheDayChangeToFalse/{id}")]
         public async Task<IActionResult> ProductDealOfTheDayChangeToFalse(int id)
         {
-            _productRepository.ProductDealOfTheDayStatusChangeFalse(id);
+           await _productRepository.ProductDealOfTheDayStatusChangeFalse(id);
 
             return Ok("ilan durumu  günü fırsatlarından cıkarıldı");
 

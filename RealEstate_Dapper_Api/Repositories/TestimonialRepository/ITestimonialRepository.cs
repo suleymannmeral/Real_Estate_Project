@@ -8,10 +8,10 @@ namespace RealEstate_Dapper_Api.Repositories.TestimonialRepository
     {
         Task<List<ResultTestimonialDto>> GetAllTestimonialAsync();
 
-        void CreateTestimonial(CreateTestimonialDto createstimonialDto);
-        void DeleteTestimonial(int id);
+        Task CreateTestimonial(CreateTestimonialDto createstimonialDto);
+        Task DeleteTestimonial(int id);
 
-        void UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto);
+        Task UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto);
 
         
 
