@@ -51,13 +51,7 @@
                         <p class="mb-4">
                             @ViewBag.desc
                         </p>
-                        <p class="mb-4">
-                            When you decide to put your business online it is a little bet tricky step
-                            for novice
-                            computer users because they want to keep data safe & secure.
-                            This problem developed from companies which did not take security seriously. Lorem ipsum
-                            dolor sit amet elit.
-                        </p>
+                      
                         <div class="single-bg-white">
                             <h3 class="post-content-title mb-4">İlan Detayları</h3>
                             <ul class="details-list">
@@ -73,7 +67,7 @@
                                 <li><strong>İlan Tarihi :</strong> @ViewBag.date.ToString("dd/MMM/yyyy")  </li>
                             </ul>
                         </div>
-                        @await Component.InvokeAsync("_PropertyAmenityStatusTrueByPropertyIdComponentPartial")
+                        @await Component.InvokeAsync("_PropertyAmenityStatusTrueByPropertyIdComponentPartial", new { id = ViewBag.i })
 
               
                     </div>

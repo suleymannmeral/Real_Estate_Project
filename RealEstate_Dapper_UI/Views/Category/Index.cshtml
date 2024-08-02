@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Admin/Index.cshtml";
+    int count = 0;
 }
 
 
@@ -9,7 +10,7 @@
     <div class="row g-4">
 <div class="col-12">
     <div class="bg-light rounded h-100 p-4">
-        <h6 class="mb-4">Responsive Table</h6>
+        <h6 class="mb-4">Kategoriler</h6>
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -25,9 +26,10 @@
                 <tbody>
                     @foreach(var item in Model)
                             {
+                                count++;
                                 <tr>
                                    
-                                    <th scope="row">@item.CategoryId</th>
+                                    <th scope="row">@count</th>
                                     <td>@item.CategoryName</td>
                                     <td>@(item.CategoryStatus ? "Aktif" : "Pasif")</td>
                                     <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
@@ -37,9 +39,10 @@
                      
                     
                 </tbody>
-                        <td><a href="#" class="btn btn-info">Yeni Kategori</a></td>
 
             </table>
+                    <td><a href="/Category/CreateCategory" class="btn btn-info">Yeni Kategori</a></td>
+
         </div>
     </div>
 </div>
