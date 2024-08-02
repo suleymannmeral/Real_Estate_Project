@@ -33,7 +33,7 @@ namespace RealEstate_Dapper_UI.Controllers
         public async Task<PartialViewResult> PartialSearch()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44382/api/Categories\r\n");
+            var responseMessage = await client.GetAsync(_apiSettings.BaseUrl + "Categories");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
