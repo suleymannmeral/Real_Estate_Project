@@ -26,6 +26,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/ContactUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXENvbnRhY3RVc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/Shared/Components/_ContactUsGetInTouchComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXFNoYXJlZFxDb21wb25lbnRzXF9Db250YWN0VXNHZXRJblRvdWNoQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/Shared/Components/_ContactUsNavbarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXFNoYXJlZFxDb21wb25lbnRzXF9Db250YWN0VXNOYXZiYXJDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/Shared/Components/_ContactUsScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXFNoYXJlZFxDb21wb25lbnRzXF9Db250YWN0VXNTY3JpcHRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/EstateAgent/Views/EstateAgentDashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcRXN0YXRlQWdlbnREYXNoYm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

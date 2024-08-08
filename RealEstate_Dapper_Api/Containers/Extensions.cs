@@ -3,6 +3,7 @@ using RealEstate_Dapper_Api.Repositories.AppUserRepositories;
 using RealEstate_Dapper_Api.Repositories.BottomGridRepository;
 using RealEstate_Dapper_Api.Repositories.CategoryRepository;
 using RealEstate_Dapper_Api.Repositories.ContactRepositories;
+using RealEstate_Dapper_Api.Repositories.ContactUsRepositories;
 using RealEstate_Dapper_Api.Repositories.EmployeeRepositories;
 using RealEstate_Dapper_Api.Repositories.EstateAgentRepositories.DashBoardRepositories.ChartRepositories;
 using RealEstate_Dapper_Api.Repositories.EstateAgentRepositories.DashBoardRepositories.Last5ProductRepositories;
@@ -47,6 +48,7 @@ namespace RealEstate_Dapper_Api.Containers
            services.AddTransient<IAppUserRepository, AppUserRepository>();
            services.AddTransient<IPropertyAmenityRepository, PropertyAmenityRepository>();
           services.AddTransient<ISubFeatureRepository, SubFeatureRepository>();
+          services.AddTransient<IContactUsRepository , ContactUsRepository>();
         }
     }
 }

@@ -49,6 +49,27 @@ namespace RealEstate_Dapper_UI.Controllers
             
 
         }
+        [HttpPost]
+        public async Task<IActionResult> CreateProduct(CreateProductDto createProductDto)
+        {
+            createProductDto.DealOfTheDay = false;
+            createProductDto.advertDate = DateTime.Now;
+            createProductDto.ProductStatus = true;
+
+         
+         
+
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(createProductDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PostAsync("https://localhost:44382/api/Products", stringContent);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+
+        }
 
 
 

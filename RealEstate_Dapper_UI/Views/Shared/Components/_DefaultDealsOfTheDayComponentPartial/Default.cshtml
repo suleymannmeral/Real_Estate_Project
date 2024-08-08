@@ -18,11 +18,11 @@
                             </a>
                         </span
                         <a href="#blog-single" class="d-block zoom">
-                            <img src="~/starter/assets/images/p3.jpg" alt=""       
+                            <img src="@item.CoverImage" style="height:300px;" alt=""       
                                  class="img-fluid news-image" />
                         </a>
                         <div class="blog-info">
-                            <a href="#category" class="category">Uncategorized</a>
+                            <a href="#category" class="category">@item.CategoryName</a>
                             <h4><a href="#blog-single">@item.Title</a></h4>
                             <p>@item.Price</p>
                         </div>

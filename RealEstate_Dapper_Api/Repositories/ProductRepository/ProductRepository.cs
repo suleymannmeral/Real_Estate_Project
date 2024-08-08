@@ -20,7 +20,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
         {
 
            
-                string query = "insert into Product (Title,Price,City,District,CoverImage,Adress,Description,Type,DealOfTheDay,advertDate,ProductStatus,ProductCategory,EmployeeID) values (@productTitle,@productPrice,@productCity,@productDistrict,@coverimage,@adress,@desc,@type,@dealoftheday,@advertdate,@productstatus,@productcategory,@employeid)";
+                string query = "insert into Product (Title,Price,City,District,CoverImage,Adress,Description,Type,DealOfTheDay,advertDate,ProductStatus,ProductCategory,UserID) values (@productTitle,@productPrice,@productCity,@productDistrict,@coverimage,@adress,@desc,@type,@dealoftheday,@advertdate,@productstatus,@productcategory,@userid)";
                 var paramaters = new DynamicParameters();
             paramaters.Add("@productTitle", productDto.Title);
             paramaters.Add("@productPrice", productDto.Price);
@@ -34,7 +34,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             paramaters.Add("@advertdate", productDto.advertDate);
             paramaters.Add("@productstatus", productDto.ProductStatus);
             paramaters.Add("@productcategory", productDto.ProductCategory);
-            paramaters.Add("@employeid", productDto.EmployeeID);
+            paramaters.Add("@userid", productDto.UserID);
 
             using (var conenction = _context.CreateConnection())
                 {

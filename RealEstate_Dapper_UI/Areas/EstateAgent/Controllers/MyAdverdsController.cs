@@ -53,10 +53,11 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
         public async Task<IActionResult> CreateAdvert()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44382/api/Categories\r\n");
+            var responseMessage = await client.GetAsync("https://localhost:44382/api/Categories");
 
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
             var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
+
             List<SelectListItem> categoryValues = (from x in values.ToList()
                                                    select new SelectListItem
                                                    {
@@ -71,20 +72,21 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAdvert(CreateProductDto createProductDto)
         {
-            createProductDto.DealOfTheDay=false;
-            createProductDto.advertDate=DateTime.Now;
+            createProductDto.DealOfTheDay = false;
+            createProductDto.advertDate = DateTime.Now;
             createProductDto.ProductStatus = true;
-            var userıd = _loginService.GetUserId;
-            createProductDto.EmployeeID = int.Parse(userıd);
 
+            var id = _loginService.GetUserId;
+            createProductDto.UserID = int.Parse(id);
 
             var client = _httpClientFactory.CreateClient();
-            var jsondata = JsonConvert.SerializeObject(createProductDto); // listeleme islemelrinde deserialize put post islemlerinde serialized
-            StringContent content = new StringContent(jsondata, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:44382/api/Products", content);
+            var jsonData = JsonConvert.SerializeObject(createProductDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PostAsync("https://localhost:44382/api/Products", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("ActiveAdverts", "EstateAgent/MyAdverds");
+
             }
             return View();
 
