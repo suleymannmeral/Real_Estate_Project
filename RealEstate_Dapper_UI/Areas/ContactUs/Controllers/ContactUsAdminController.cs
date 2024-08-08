@@ -32,14 +32,14 @@ namespace RealEstate_Dapper_UI.Areas.ContactUs.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> UpdateContactUs()
+        public async Task<IActionResult> UpdateContactUs(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44382/api/ContactUsApiControlle");
+            var responseMessage = await client.GetAsync($"https://localhost:44382/api/ContactUsApiControlle/"+id);
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<UpdateContactUsDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<UpdateContactUsDto>(jsonData);
                 return View(values);
             }
             return View();
@@ -50,12 +50,17 @@ namespace RealEstate_Dapper_UI.Areas.ContactUs.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateContactUsDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:44382/api/ContactUsApiControlle", stringContent);
+            var responseMessage = await client.PutAsync("https://localhost:44382/api/ContactUsApiControlle/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+                var errorResponse = await responseMessage.Content.ReadAsStringAsync();
+                ViewData["Error"] = $"Update operation failed: {errorResponse}";
+                return View(updateContactUsDto);
+            }
         }
     }
 }

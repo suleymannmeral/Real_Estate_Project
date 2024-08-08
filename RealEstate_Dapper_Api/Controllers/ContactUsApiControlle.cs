@@ -32,5 +32,12 @@ namespace RealEstate_Dapper_Api.Controllers
              await contactUsRepository.UpdateContactUs(updateContactUsDto);
             return Ok("ContactUs BAşarıyla Güncellendi");
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetContactUsBYId(int id)
+        {
+            var value = await contactUsRepository.GetContactUsById(id) ;
+            return Ok(value);
+        }
     }
 }

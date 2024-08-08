@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXFNoYXJlZFxDb21wb25lbnRzXF9Db250YWN0VXNTY3JpcHRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/EstateAgent/Views/EstateAgentDashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcRXN0YXRlQWdlbnREYXNoYm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

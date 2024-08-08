@@ -29,9 +29,11 @@
                         </thead>
                         <tbody>
                             <tr>
+                          
                             @foreach(var item in Model)
                             {
                                 count++;
+                                
                             
 
                                     <th scope="row">@count</th>
@@ -39,8 +41,8 @@
                                     <td>@item.Email</td>
                                     <td>@item.Phone</td>
                                     <td>@item.Tel</td>
-                                
-                                    <td><a href="#" class="btn btn-outline-danger">Güncelle</a></td>
+
+                                    <td><a href="UpdateContactUs/@item.ContactUsId" class="btn btn-outline-danger">Güncelle</a></td>
                                     
                                     <td></td>
                                 
