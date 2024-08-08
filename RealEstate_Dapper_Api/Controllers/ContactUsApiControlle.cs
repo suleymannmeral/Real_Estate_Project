@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RealEstate_Dapper_Api.Dtos.ContactUsDto;
 using RealEstate_Dapper_Api.Repositories.AppUserRepositories;
 using RealEstate_Dapper_Api.Repositories.ContactRepositories;
 using RealEstate_Dapper_Api.Repositories.ContactUsRepositories;
@@ -23,6 +24,13 @@ namespace RealEstate_Dapper_Api.Controllers
         {
             var values = await contactUsRepository.GetContactUsInfo();
             return Ok(values);
+        }
+        [HttpPut]
+
+        public async Task<IActionResult> UpdateContactUs(UpdateContactUsDto updateContactUsDto)
+        {
+             await contactUsRepository.UpdateContactUs(updateContactUsDto);
+            return Ok("ContactUs BAşarıyla Güncellendi");
         }
     }
 }
