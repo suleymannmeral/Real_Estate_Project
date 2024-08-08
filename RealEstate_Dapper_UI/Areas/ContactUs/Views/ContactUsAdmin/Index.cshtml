@@ -1,0 +1,63 @@
+﻿@model List<RealEstate_Dapper_UI.Areas.ContactUs.Data.ResultContactUsDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+    var count = 0;
+
+}
+
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">İletişim Alanı</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Ofis Adresi</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Telefon</th>
+                                <th scope="col">Telefon(2)</th>
+                            
+                                <th scope="col">Güncelle</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            @foreach(var item in Model)
+                            {
+                                count++;
+                            
+
+                                    <th scope="row">@count</th>
+                                    <td>@item.OfficeAdress</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Phone</td>
+                                    <td>@item.Tel</td>
+                                
+                                    <td><a href="#" class="btn btn-outline-danger">Güncelle</a></td>
+                                    
+                                    <td></td>
+                                
+                            
+                                
+                            }
+                            </tr>
+                               
+
+
+                        </tbody>
+
+                    </table>
+              
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

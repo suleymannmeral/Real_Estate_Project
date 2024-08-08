@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\suley\source\repos\RealEstate_Dapper_Api\RealEstate_Dapper_UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/ContactUsAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXENvbnRhY3RVc0FkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/ContactUsAdmin/UpdateContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXENvbnRhY3RVc0FkbWluXFVwZGF0ZUNvbnRhY3RVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/ContactUs/Views/ContactUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFVzXFZpZXdzXENvbnRhY3RVc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
