@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\AboutUs\Data\Dtos\" />
     <Folder Include="Areas\ContactUs\Models\" />
     <Folder Include="Areas\ContactUs\NewFolder\" />
     <Folder Include="Areas\EstateAgent\Data\" />

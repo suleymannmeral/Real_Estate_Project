@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RealEstate_Dapper_Api.Dtos.AboutUsDtos;
 using RealEstate_Dapper_Api.Repositories.AboutUsRepository;
 
 namespace RealEstate_Dapper_Api.Controllers
@@ -26,6 +27,12 @@ namespace RealEstate_Dapper_Api.Controllers
             var values = await _aboutUsRepository.GetAboutUsByID(id);
             return Ok(values);
 
+        }
+        [HttpPut]
+        public async Task<IActionResult>UpdateAboutUs(UpdateAboutUsDto updateAboutUs)
+        {
+            await _aboutUsRepository.UpdateAboutUs(updateAboutUs);
+            return Ok("AboutUs Updated SuccsessFully");
         }
 
     }

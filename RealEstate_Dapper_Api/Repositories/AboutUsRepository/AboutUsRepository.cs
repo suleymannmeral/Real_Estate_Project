@@ -39,13 +39,14 @@ namespace RealEstate_Dapper_Api.Repositories.AboutUsRepository
 
         public async Task UpdateAboutUs(UpdateAboutUsDto updateAboutUsDto)
         {
-            string query = "Update AboutUs Set Title=@title,Description1=@desc1,Description2=@desc2,VideoLink=@video,Image=image where AboutUsID=@id";
+            string query = "Update AboutUs Set Title=@title,Description1=@desc1,Description2=@desc2,VideoLink=@video,Image=@image where AboutUsID=@id";
             var paramaters = new DynamicParameters();
             paramaters.Add("@title",updateAboutUsDto.Title);
             paramaters.Add("@desc1",updateAboutUsDto.Description1);
             paramaters.Add("@desc2",updateAboutUsDto.Description2);
             paramaters.Add("@video",updateAboutUsDto.VideoLink);
             paramaters.Add("@image",updateAboutUsDto.Image);
+            paramaters.Add("@id",updateAboutUsDto.AboutUsID);
             using (var connection = _context.CreateConnection())
             {
                  await connection.ExecuteAsync(query, paramaters);

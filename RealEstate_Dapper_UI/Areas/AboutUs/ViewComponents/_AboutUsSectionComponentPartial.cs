@@ -4,11 +4,11 @@ using RealEstate_Dapper_UI.Areas.AboutUs.Data.AboutUsDto;
 
 namespace RealEstate_Dapper_UI.Areas.AboutUs.ViewComponents
 {
-    public class _AboutUsMainComponentPartial:ViewComponent
+    public class _AboutUsSectionComponentPartial:ViewComponent
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public _AboutUsMainComponentPartial(IHttpClientFactory httpClientFactory)
+        public _AboutUsSectionComponentPartial(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
