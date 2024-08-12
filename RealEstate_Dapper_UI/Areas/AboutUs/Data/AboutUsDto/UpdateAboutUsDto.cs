@@ -1,4 +1,4 @@
-﻿namespace RealEstate_Dapper_Api.Dtos.AboutUsDtos
+﻿namespace RealEstate_Dapper_UI.Areas.AboutUs.Data.AboutUsDto
 {
     public class UpdateAboutUsDto
     {
@@ -7,6 +7,6 @@
         public string Description1 { get; set; }
         public string Description2 { get; set; }
         public string VideoLink { get; set; }
-   
+       
     }
 }

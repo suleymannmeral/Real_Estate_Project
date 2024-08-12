@@ -7,7 +7,7 @@
         public  string Description1 { get; set; }
         public  string Description2 { get; set; }
         public  string VideoLink { get; set; }
-        public  string Image { get; set; }
+
 
     }
 }

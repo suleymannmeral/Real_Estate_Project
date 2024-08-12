@@ -6,13 +6,11 @@ using System.Text;
 namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
 {
     [Area("AboutUs")]
-    public class AboutUsAdminController : Controller
+    public class AboutUsSectionAdminController : Controller
     {
-       
-
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public AboutUsAdminController(IHttpClientFactory httpClientFactory)
+        public AboutUsSectionAdminController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -24,7 +22,7 @@ namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultAboutUsDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<ResultAboutUsSectionDto>>(jsonData);
                 return View(values);
             }
 
@@ -34,7 +32,7 @@ namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
         public async Task<IActionResult> UpdateAboutUs(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44382/api/AboutUsApi/"+id);
+            var responseMessage = await client.GetAsync("https://localhost:44382/api/AboutUsApi/" + id);
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -68,3 +66,4 @@ namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
 
     }
 }
+
