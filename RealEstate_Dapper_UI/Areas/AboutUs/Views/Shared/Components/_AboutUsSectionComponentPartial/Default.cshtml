@@ -1,23 +1,16 @@
-﻿<div class="grids-area-hny main-cont-wthree-fea row mt-5 pt-lg-5 pt-5">
-    <div class="col-lg-4 col-md-6 grids-feature">
-        <div class="area-box">
-            <span class="fa fa-home"></span>
-            <h4><a href="#feature" class="title-head">Guidance you need</a></h4>
-            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in.  Ut eu leo non. Duis sed et dolor amet.</p>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
-        <div class="area-box">
-            <span class="fa fa-search-plus"></span>
-            <h4><a href="#feature" class="title-head">Search that feels familiar</a></h4>
-            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed dolor et amet.</p>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
-        <div class="area-box">
-            <span class="fa fa-dollar"></span>
-            <h4><a href="#feature" class="title-head">Premium values</a></h4>
-            <p>Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed dolor et amet.</p>
-        </div>
+﻿@model List<RealEstate_Dapper_UI.Areas.AboutUs.Data.AboutUsDto.ResultAboutUsSectionDto>
+
+<div class="container py-lg-5 py-md-4 py-2">
+    <div class="row mt-5 pt-lg-5 pt-5">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="area-box">
+                    <span class="fa fa-home" style="color:orange"></span>
+                    <h4><a href="#feature" class="title-head">@item.Title</a></h4>
+                    <p>@item.Description</p>
+                </div>
+            </div>
+        }
     </div>
 </div>
