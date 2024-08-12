@@ -18,7 +18,7 @@ namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44382/api/AboutUsApi\r\n");
+            var responseMessage = await client.GetAsync("https://localhost:44382/api/AboutUsSectionApi\r\n");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -32,23 +32,23 @@ namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
         public async Task<IActionResult> UpdateAboutUs(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44382/api/AboutUsApi/" + id);
+            var responseMessage = await client.GetAsync("https://localhost:44382/api/AboutUsSectionApi/" + id);
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateAboutUsDto>(jsonData);
+                var values = JsonConvert.DeserializeObject<UpdateAboutUsSectionDto>(jsonData);
                 return View(values);
             }
 
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> UpdateAboutUs(UpdateAboutUsDto aboutUsDto)
+        public async Task<IActionResult> UpdateAboutUs(UpdateAboutUsSectionDto updateAboutUsSectionDto)
         {
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(aboutUsDto);
+            var jsonData = JsonConvert.SerializeObject(updateAboutUsSectionDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:44382/api/AboutUsApi/", stringContent);
+            var responseMessage = await client.PutAsync("https://localhost:44382/api/AboutUsSectionApi/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -58,7 +58,7 @@ namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
             {
                 var errorResponse = await responseMessage.Content.ReadAsStringAsync();
                 ViewData["Error"] = $"Update operation failed: {errorResponse}";
-                return View(aboutUsDto);
+                return View(updateAboutUsSectionDto);
             }
         }
 

@@ -7,6 +7,6 @@ namespace RealEstate_Dapper_Api.Repositories.AboutUsSectionRepository
     {
         Task<List<ResultAboutUsSectionDto>> GetAllAboutUsSection();
         Task<ResultAboutUsSectionDto> GetAboutUsSectionByID(int id);
-        Task UpdateAboutUs(UpdateAboutUsSectionDto updateAboutUsSectionDto);
+        Task UpdateAboutUsSection(UpdateAboutUsSectionDto updateAboutUsSectionDto);
     }
 }
