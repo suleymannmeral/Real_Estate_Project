@@ -6,6 +6,7 @@ namespace RealEstate_Dapper_Api.Repositories.AppUserRepositories
     public interface IAppUserRepository
     {
         Task<GetAppUserByProductIDDto> GetAppUserByProductID(int id);
+        Task<List<ResultAgentDto>> GetAgentByUserRole();
 
     }
 }

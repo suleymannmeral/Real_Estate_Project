@@ -21,6 +21,13 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(values);
 
         }
+        [HttpGet("AgentList")]
+        public async Task<IActionResult> GetAgent()
+        {
+            var values = await _appuserRepository.GetAgentByUserRole();
+            return Ok(values);
+
+        }
 
     }
 }

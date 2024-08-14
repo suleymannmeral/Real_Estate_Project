@@ -14,6 +14,20 @@ namespace RealEstate_Dapper_Api.Repositories.AppUserRepositories
             _context = context;
         }
 
+        public async Task<List<ResultAgentDto>> GetAgentByUserRole()
+        {
+            string query = "Select * from Users where UserRole=5";
+         
+            using (var connection = _context.CreateConnection())
+            {
+
+                var values = await connection.QueryAsync<ResultAgentDto>(query);
+                return values.ToList();
+           
+
+            }
+        }
+
         public async Task<GetAppUserByProductIDDto> GetAppUserByProductID(int id)
         {
             string query = "Select * from Users where UserID=@userid";
