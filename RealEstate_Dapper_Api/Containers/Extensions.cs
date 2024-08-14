@@ -1,6 +1,7 @@
 ﻿using RealEstate_Dapper_Api.Models.DapperContext;
 using RealEstate_Dapper_Api.Repositories.AboutUsRepository;
 using RealEstate_Dapper_Api.Repositories.AboutUsSectionRepository;
+using RealEstate_Dapper_Api.Repositories.AboutUsWhyUsRepository;
 using RealEstate_Dapper_Api.Repositories.AppUserRepositories;
 using RealEstate_Dapper_Api.Repositories.BottomGridRepository;
 using RealEstate_Dapper_Api.Repositories.CategoryRepository;
@@ -53,6 +54,7 @@ namespace RealEstate_Dapper_Api.Containers
           services.AddTransient<IContactUsRepository , ContactUsRepository>();
           services.AddTransient<IAboutUsRepository , AboutUsRepository>();
           services.AddTransient<IAboutUsSectionRepository , AboutUsSectionRepository>();
+          services.AddTransient<IAboutUsWhyUsRepository , AboutUsWhyRepository>();
         }
     }
 }

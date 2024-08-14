@@ -42,12 +42,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRVc1xWaWV3c1xBYm91dFVzU2VjdGlvbkFkbWluXFVwZGF0ZUFib3V0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/AboutUs/Views/AboutUsWhyUsApi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRVc1xWaWV3c1xBYm91dFVzV2h5VXNBcGlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/AboutUs/Views/AboutUsWhyUsApi/UpdateAboutUsWhyUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRVc1xWaWV3c1xBYm91dFVzV2h5VXNBcGlcVXBkYXRlQWJvdXRVc1doeVVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/AboutUs/Views/AboutUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRVc1xWaWV3c1xBYm91dFVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/AboutUs/Views/Shared/Components/_AboutUsMainComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRVc1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xfQWJvdXRVc01haW5Db21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/AboutUs/Views/Shared/Components/_AboutUsOurTeamComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRVc1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xfQWJvdXRVc091clRlYW1Db21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/AboutUs/Views/Shared/Components/_AboutUsSectionComponentPartial/Default.cshtml]
