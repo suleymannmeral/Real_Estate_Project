@@ -28,6 +28,13 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(values);
 
         }
+        [HttpGet("AppUSer{id}")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            var values = await _appuserRepository.GetAppUserByUserID(id);
+            return Ok(values);
+
+        }
 
     }
 }

@@ -20,36 +20,40 @@ namespace RealEstate_Dapper_Api.Controllers
 
         [HttpPost]
 
+        [HttpPost]
         public async Task<IActionResult> SignIn(CreateLoginDto loginDto)
         {
-            string query = "Select * from Users Where Username=@username and Password=@password";
-            string query2 = "Select UserID From Users Where Username=@username and Password=@password";
+            string query = "SELECT * FROM Users WHERE Username=@username AND Password=@password";
+            string query2 = "SELECT UserID, UserRole FROM Users WHERE Username=@username AND Password=@password";
 
-            var paramaters = new DynamicParameters();
-            paramaters.Add("@username", loginDto.Username);
-            paramaters.Add("@password", loginDto.Password);
-            using (var conenction = _context.CreateConnection())
+            var parameters = new DynamicParameters();
+            parameters.Add("@username", loginDto.Username);
+            parameters.Add("@password", loginDto.Password);
+
+            using (var connection = _context.CreateConnection())
             {
-                var values= await conenction.QueryFirstOrDefaultAsync<CreateLoginDto>(query,paramaters);
-                var values2 = await conenction.QueryFirstOrDefaultAsync<GetAppUserDto>(query2,paramaters);
+                var user = await connection.QueryFirstOrDefaultAsync<CreateLoginDto>(query, parameters);
+                var userDetails = await connection.QueryFirstOrDefaultAsync<GetAppUserDto>(query2, parameters);
 
-                if (values != null)
+                if (user != null)
                 {
-                    GetCheckAppUserViewModel model = new GetCheckAppUserViewModel();
-                    model.Username = values.Username;
-                    model.ID = values2.UserID;
+                    GetCheckAppUserViewModel model = new GetCheckAppUserViewModel
+                    {
+                        Username = user.Username,
+                        ID = userDetails.UserID,
+                        RoleID = userDetails.UserRole // UserRole ID'sini al
+                    };
+
                     var token = JwtTokenGenerator.GenerateToken(model);
                     return Ok(token);
-             
-              
                 }
                 else
                 {
-                    return Ok("Başarısız");
+                    return Unauthorized("Başarısız");
                 }
             }
-
         }
+
 
     }
 }

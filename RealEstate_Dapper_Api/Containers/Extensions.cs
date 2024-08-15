@@ -13,6 +13,7 @@ using RealEstate_Dapper_Api.Repositories.EstateAgentRepositories.DashBoardReposi
 using RealEstate_Dapper_Api.Repositories.EstateAgentRepositories.DashBoardRepositories.StatisticRepositories;
 using RealEstate_Dapper_Api.Repositories.MessageRepository;
 using RealEstate_Dapper_Api.Repositories.PopularLocationRepository;
+using RealEstate_Dapper_Api.Repositories.ProductDetailRepository;
 using RealEstate_Dapper_Api.Repositories.ProductImageRepositories;
 using RealEstate_Dapper_Api.Repositories.ProductRepository;
 using RealEstate_Dapper_Api.Repositories.PropertyAmenityRepository;
@@ -55,6 +56,7 @@ namespace RealEstate_Dapper_Api.Containers
           services.AddTransient<IAboutUsRepository , AboutUsRepository>();
           services.AddTransient<IAboutUsSectionRepository , AboutUsSectionRepository>();
           services.AddTransient<IAboutUsWhyUsRepository , AboutUsWhyRepository>();
+          services.AddTransient<IProductDetailRepository , ProductDetailRepository>();
         }
     }
 }

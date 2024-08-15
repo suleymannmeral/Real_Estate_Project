@@ -53,7 +53,7 @@ namespace RealEstate_Dapper_UI.Areas.AboutUs.Controllers
             var responseMessage = await client.PutAsync("https://localhost:44382/api/AboutUsWhyUsApi/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return Redirect("https://localhost:44375/AboutUs/AboutUsWhyUsApi/Index");
 
             }
             else

@@ -49,5 +49,29 @@ namespace RealEstate_Dapper_Api.Repositories.AppUserRepositories
 
             }
         }
+
+        public async Task<GetAppUserById> GetAppUserByUserID(int id)
+        {
+            string query = "Select * from Users where UserID=@userid";
+            var parameters = new DynamicParameters();
+            parameters.Add("@userid", id);
+            using (var connection = _context.CreateConnection())
+            {
+
+                var values = await connection.QueryFirstOrDefaultAsync<GetAppUserById>(query, parameters);
+                if (values != null)
+                {
+                    return values;
+                }
+                else
+                {
+                    throw new Exception("User not Found");
+                }
+
+
+            }
+        }
+
+      
     }
 }

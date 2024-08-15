@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using RealEstate_Dapper_UI.Dtos.LoginDtos;
+using RealEstate_Dapper_UI.Enums;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Text;
@@ -24,8 +25,9 @@ namespace RealEstate_Dapper_UI.Controllers
         {
             return View();
         }
+
         [HttpPost]
-        public async Task<ActionResult> Index(CreateLoginDto createLoginDto)
+        public async Task<IActionResult> Index(CreateLoginDto createLoginDto)
         {
             var client = _httpClientFactory.CreateClient();
             var content = new StringContent(JsonSerializer.Serialize(createLoginDto), Encoding.UTF8, "application/json");
@@ -57,29 +59,37 @@ namespace RealEstate_Dapper_UI.Controllers
 
                         await HttpContext.SignInAsync(JwtBearerDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProps);
 
-                        // Kullanıcının rolüne göre yönlendirme
-                        switch (tokenModel.Role)
+                        // Token'dan rol bilgisini al
+                        var roleClaim = claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+                        if (roleClaim != null && int.TryParse(roleClaim, out var userRole))
                         {
-                            case "Admin":
-                                return RedirectToAction("AdminDashboard", "Admin");
-                            case "Member":
-                                return RedirectToAction("MemberDashboard", "Member");
-                            case "Visitor":
-                                return RedirectToAction("VisitorDashboard", "Visitor");
-                            case "Manager":
-                                return RedirectToAction("ManagerDashboard", "Manager");
-                            case "Agent":
-                                return RedirectToAction("EstateAgent", "EstateAgentDashboard");
-                            default:
-                                return RedirectToAction("EstateAgent", "EstateAgentDashboard");
+                            // UserRole değerine göre yönlendirme yap
+                            switch (userRole)
+                            {
+                                case 1:
+                                    return RedirectToAction("Index", "DashBoard");
+                                case 2:
+                                    return RedirectToAction("MemberDashboard", "Member");
+                                case 3:
+                                    return RedirectToAction("VisitorDashboard", "Visitor");
+                                case 4:
+                                    return RedirectToAction("ManagerDashboard", "Manager");
+                                case 5:
+                                    return RedirectToAction("EstateAgentDashboard", "EstateAgent");
+                                default:
+                                    return RedirectToAction("Index", "Home"); // Varsayılan yönlendirme
+                            }
                         }
+
+                        // Eğer rol bilgisi alınamazsa varsayılan yönlendirme
+                        return RedirectToAction("Index", "Home");
                     }
                 }
             }
 
             // Başarısız giriş durumunda yeniden login sayfasını göster
+            ViewBag.ErrorMessage = "Giriş başarısız. Kullanıcı adı veya şifre yanlış.";
             return View();
         }
-
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using RealEstate_Dapper_UI.Dtos.CategoryDtos;
+using RealEstate_Dapper_UI.Dtos.ProductDetailDtos;
 using RealEstate_Dapper_UI.Dtos.ProductDtos;
 using RealEstate_Dapper_UI.Services;
 using System.Net.Http;
@@ -89,6 +90,19 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
 
             }
             return View();
+
+        }
+        [HttpGet]
+
+        public async Task<IActionResult> CreateAdvertDetail()
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("https://localhost:44382/api/Categories");
+
+            var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<CreateProductDetailDto>>(jsonData);
+            return View();
+
 
         }
 

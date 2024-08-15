@@ -21,6 +21,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
            
                 string query = "insert into Product (Title,Price,City,District,CoverImage,Adress,Description,Type,DealOfTheDay,advertDate,ProductStatus,ProductCategory,UserID) values (@productTitle,@productPrice,@productCity,@productDistrict,@coverimage,@adress,@desc,@type,@dealoftheday,@advertdate,@productstatus,@productcategory,@userid)";
+                
                 var paramaters = new DynamicParameters();
             paramaters.Add("@productTitle", productDto.Title);
             paramaters.Add("@productPrice", productDto.Price);
