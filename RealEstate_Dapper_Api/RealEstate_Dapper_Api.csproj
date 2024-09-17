@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Folder Include="Dtos\AmenityDtos\" />
+    <Folder Include="Dtos\NewFolder1\" />
     <Folder Include="Dtos\NewFolder\" />
     <Folder Include="Dtos\StatisticsApiDto\" />
   </ItemGroup>

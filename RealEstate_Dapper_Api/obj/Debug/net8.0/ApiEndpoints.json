@@ -1,0 +1,1404 @@
+[
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsApiController",
+    "Method": "AboutUsList",
+    "RelativePath": "api/AboutUsApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsApiController",
+    "Method": "UpdateAboutUs",
+    "RelativePath": "api/AboutUsApi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateAboutUs",
+        "Type": "RealEstate_Dapper_Api.Dtos.AboutUsDtos.UpdateAboutUsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsApiController",
+    "Method": "AboutUsByID",
+    "RelativePath": "api/AboutUsApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsSectionApiController",
+    "Method": "GetAboutUsSection",
+    "RelativePath": "api/AboutUsSectionApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsSectionApiController",
+    "Method": "UpdateAboutUsSection",
+    "RelativePath": "api/AboutUsSectionApi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateAboutUs",
+        "Type": "RealEstate_Dapper_Api.Dtos.AboutUsSectionDtos.UpdateAboutUsSectionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsSectionApiController",
+    "Method": "AboutUsSectionByID",
+    "RelativePath": "api/AboutUsSectionApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsWhyUsApiController",
+    "Method": "GetAllWhyUs",
+    "RelativePath": "api/AboutUsWhyUsApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsWhyUsApiController",
+    "Method": "UpdateWhyUs",
+    "RelativePath": "api/AboutUsWhyUsApi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateAboutUsWhyUsDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.AboutUsWhyUsDtos.UpdateAboutUsWhyUsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AboutUsWhyUsApiController",
+    "Method": "GetAllWhyUsById",
+    "RelativePath": "api/AboutUsWhyUsApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AppUserApiController",
+    "Method": "GetAppUserByProductID",
+    "RelativePath": "api/AppUserApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AppUserApiController",
+    "Method": "GetAgent",
+    "RelativePath": "api/AppUserApi/AgentList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.AppUserApiController",
+    "Method": "GetUserById",
+    "RelativePath": "api/AppUserApi/AppUSer{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.BottomGridController",
+    "Method": "BottomGridList",
+    "RelativePath": "api/BottomGrid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.BottomGridController",
+    "Method": "UpdateBottomGrid",
+    "RelativePath": "api/BottomGrid",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateBottomGridDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.BottomGridDtos.UpdateBottomGridDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.BottomGridController",
+    "Method": "CreateBottomGrid",
+    "RelativePath": "api/BottomGrid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBottomGridDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.BottomGridDtos.CreateBottomGridDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.BottomGridController",
+    "Method": "DeleteBottomGrid",
+    "RelativePath": "api/BottomGrid/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.BottomGridController",
+    "Method": "GetBottomGridWithID",
+    "RelativePath": "api/BottomGrid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.CategoriesController",
+    "Method": "CategoryList",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.CategoriesController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCategoryDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.CategoryDtos.CreateCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.CategoriesController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateCategoryDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.CategoryDtos.UpdateCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.CategoriesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.CategoriesController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ContactController",
+    "Method": "GetLast4Contact",
+    "RelativePath": "api/Contact/ResultLast4Contact",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ContactUsApiControlle",
+    "Method": "GetContactUsInfo",
+    "RelativePath": "api/ContactUsApiControlle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ContactUsApiControlle",
+    "Method": "UpdateContactUs",
+    "RelativePath": "api/ContactUsApiControlle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateContactUsDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.ContactUsDto.UpdateContactUsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ContactUsApiControlle",
+    "Method": "GetContactUsBYId",
+    "RelativePath": "api/ContactUsApiControlle/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EmployeesController",
+    "Method": "EmployeeList",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EmployeesController",
+    "Method": "CreateEmployee",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createEmployeeDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.EmployeeDtos.CreateEmployeeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EmployeesController",
+    "Method": "UpdateEmployee",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateEmployeeDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.EmployeeDtos.UpdateEmployeeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EmployeesController",
+    "Method": "DeleteEmployee",
+    "RelativePath": "api/Employees/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EmployeesController",
+    "Method": "GetEmployee",
+    "RelativePath": "api/Employees/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EstateAgentChartController",
+    "Method": "ProductCountOrderBYcity",
+    "RelativePath": "api/EstateAgentChart/Get5CityOfChart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EstateAgentDashboardStatisticController",
+    "Method": "AllProductCount",
+    "RelativePath": "api/EstateAgentDashboardStatistic/AllProductCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EstateAgentDashboardStatisticController",
+    "Method": "ProductCountByEmployeeID",
+    "RelativePath": "api/EstateAgentDashboardStatistic/ProductCountByEmployeID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EstateAgentDashboardStatisticController",
+    "Method": "ProductCountByEmployeIDProductStatusFalse",
+    "RelativePath": "api/EstateAgentDashboardStatistic/ProductCountByEmployeIDProductStatusFalse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.EstateAgentDashboardStatisticController",
+    "Method": "ProductCountByEmployeIDProductStatusTrue",
+    "RelativePath": "api/EstateAgentDashboardStatistic/ProductCountByEmployeIDProductStatusTrue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.GetLast5ProductByEmployeeApiController",
+    "Method": "GetLast5ProductByEmployeeID",
+    "RelativePath": "api/GetLast5ProductByEmployeeApi/GetLast5ProductByEmployeeID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.LoginApiController",
+    "Method": "SignIn",
+    "RelativePath": "api/LoginApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.LoginDtos.CreateLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.MessagesController",
+    "Method": "GetLast3Messages",
+    "RelativePath": "api/Messages/ResultLast3MessagesByReceiverID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.PopularLocationsController",
+    "Method": "GetPopularLocationList",
+    "RelativePath": "api/PopularLocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.PopularLocationsController",
+    "Method": "CreatePopularLocation",
+    "RelativePath": "api/PopularLocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createPopularLocationDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.PopularLocationDto.CreatePopularLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.PopularLocationsController",
+    "Method": "UpdatePopularLocation",
+    "RelativePath": "api/PopularLocations",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatePopularLocationDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.PopularLocationDto.UpdatePopularLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.PopularLocationsController",
+    "Method": "DeletePopularLocation",
+    "RelativePath": "api/PopularLocations/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.PopularLocationsController",
+    "Method": "GetPopularLocationById",
+    "RelativePath": "api/PopularLocations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductAmenityApiController",
+    "Method": "GetProductDetailByProductID",
+    "RelativePath": "api/ProductAmenityApi/getPropertyAmenityByStatusTrue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductDetailsApiController",
+    "Method": "CreateProductDetail",
+    "RelativePath": "api/ProductDetailsApi/CreateProductDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createProductDetailDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.ProductDetailDtos.CreateProductDetailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductDetailsApiController",
+    "Method": "GetProductDetailByProductID",
+    "RelativePath": "api/ProductDetailsApi/getProductDetailByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductImagesApiController",
+    "Method": "CreateProductImage",
+    "RelativePath": "api/ProductImagesApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "createProductImageDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.ProductImageDtos.CreateProductImageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductImagesApiController",
+    "Method": "GetProductImagesByProductID",
+    "RelativePath": "api/ProductImagesApi/GetProductImagesByProductID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ServicesList",
+    "RelativePath": "api/Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "CreateProduct",
+    "RelativePath": "api/Products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createProductDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.ProductDtos.CreateProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/Products",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateProductDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.ProductDtos.UpdateProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "GetProductById",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "GetLastProduct",
+    "RelativePath": "api/Products/GetLastProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "GetProductByDealOfTheDayTrueCategoryAsync",
+    "RelativePath": "api/Products/GetProductByDealOfTheDayTrueCategoryAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "GetProductDetailByProductID",
+    "RelativePath": "api/Products/getProductByProductID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "GetLast5ProductList",
+    "RelativePath": "api/Products/Last5Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ProductAdvertsListByEmployeeByFalse",
+    "RelativePath": "api/Products/ProductAdvertsListByEmployeeByFalse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ProductAdvertsListByEmployeeByTrue",
+    "RelativePath": "api/Products/ProductAdvertsListByEmployeeByTrue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ProductDealOfTheDayChangeToFalse",
+    "RelativePath": "api/Products/ProductDealOfTheDayChangeToFalse/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ProductDealOfTheDayChangeToTrue",
+    "RelativePath": "api/Products/ProductDealOfTheDayChangeToTrue/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ProductListWithCategory",
+    "RelativePath": "api/Products/ProductListWithCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ChangeProductStatusAsPassive",
+    "RelativePath": "api/Products/ProductStatusAsPassive/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ChangeProductStatusAsActive",
+    "RelativePath": "api/Products/ProductStatusChangeToTrue/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ResultLast3ProductWithCategoryAsync",
+    "RelativePath": "api/Products/ResultLast3ProductWithCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ProductsController",
+    "Method": "ResultProductWithSearchList",
+    "RelativePath": "api/Products/ResultProductWithSearchList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchKeyValue",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "propertyCategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ServicesController",
+    "Method": "ServicesList",
+    "RelativePath": "api/Services",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ServicesController",
+    "Method": "CreateServices",
+    "RelativePath": "api/Services",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createServicesDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.ServicesDto.CreateServicesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ServicesController",
+    "Method": "UpdateServices",
+    "RelativePath": "api/Services",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateServicesDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.ServicesDto.UpdateServicesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ServicesController",
+    "Method": "DeleteService",
+    "RelativePath": "api/Services/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ServicesController",
+    "Method": "GetServiseById",
+    "RelativePath": "api/Services/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "ActiveCategoryCount",
+    "RelativePath": "api/StatisticsApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "ActiveEmployeeCount",
+    "RelativePath": "api/StatisticsApi/Activeemployee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "ApartmentCount",
+    "RelativePath": "api/StatisticsApi/ApartmentCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "Category",
+    "RelativePath": "api/StatisticsApi/AvgCategoryCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "RoomCount",
+    "RelativePath": "api/StatisticsApi/AvgRoomCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "CategoryNameByMaxProduct",
+    "RelativePath": "api/StatisticsApi/CategoryNameByMaxProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "CityNameByMaxProduct",
+    "RelativePath": "api/StatisticsApi/CityNameByMaxProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "DifferentCityCount",
+    "RelativePath": "api/StatisticsApi/DifferentCityCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "EmployeeNameByMaxProduct",
+    "RelativePath": "api/StatisticsApi/EmployeeNameByMaxProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "LastProductPrice",
+    "RelativePath": "api/StatisticsApi/LastProductPrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "NewestBuildingYear",
+    "RelativePath": "api/StatisticsApi/NewestBuildingYear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "OldestBuildingYear",
+    "RelativePath": "api/StatisticsApi/OldestBuildingYear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "PassiveCategoryCount",
+    "RelativePath": "api/StatisticsApi/PassiveCategoryCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "ProductCount",
+    "RelativePath": "api/StatisticsApi/ProductCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "RentProductPrice",
+    "RelativePath": "api/StatisticsApi/RentProductAvgPrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.StatisticsApiController",
+    "Method": "SaleProductPrice",
+    "RelativePath": "api/StatisticsApi/SaleProductAvgPrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.SubFeatureApiController",
+    "Method": "GetAllSubFeaturesAsync",
+    "RelativePath": "api/SubFeatureApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.TestimonialController",
+    "Method": "GetTestimonialList",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.TestimonialController",
+    "Method": "CreateWhoWeAre",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createTestimonialDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.TestimonialDtos.CreateTestimonialDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.TestimonialController",
+    "Method": "DeleteTestimonial",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.TestimonialController",
+    "Method": "UpdateTestimonial",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateTestimonialDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.TestimonialDtos.UpdateTestimonialDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.ToDoListController",
+    "Method": "GetToDoList",
+    "RelativePath": "api/ToDoList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.TokenCreateController",
+    "Method": "CreateToken",
+    "RelativePath": "api/TokenCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RealEstate_Dapper_Api.Tools.GetCheckAppUserViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.WhoWeAreController",
+    "Method": "WhoWeAreList",
+    "RelativePath": "api/WhoWeAre",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.WhoWeAreController",
+    "Method": "CreateWhoWeAre",
+    "RelativePath": "api/WhoWeAre",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "whoWeAreDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.WhoWeAreDto.CreateWhoWeAreDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.WhoWeAreController",
+    "Method": "UpdateWhoWeAre",
+    "RelativePath": "api/WhoWeAre",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "whoWeAreDto",
+        "Type": "RealEstate_Dapper_Api.Dtos.WhoWeAreDto.UpdateWhoWeAreDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.WhoWeAreController",
+    "Method": "DeleteWhoWeAre",
+    "RelativePath": "api/WhoWeAre/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.WhoWeAreController",
+    "Method": "GetWhoWeAre",
+    "RelativePath": "api/WhoWeAre/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealEstate_Dapper_Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RealEstate_Dapper_Api.WeatherForecast, RealEstate_Dapper_Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

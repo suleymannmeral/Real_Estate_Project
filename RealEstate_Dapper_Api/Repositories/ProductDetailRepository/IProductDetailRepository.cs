@@ -4,7 +4,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductDetailRepository
 {
     public interface IProductDetailRepository
     {
-        Task CreateProductDetail(CreateProductDetailDto createProductDetailDto,int id);
+        Task CreateProductDetail(CreateProductDetailDto createProductDetailDto);
 
     }
 }

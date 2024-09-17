@@ -71,7 +71,7 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> CreateAdvert(CreateProductDto createProductDto)
+        public async Task<IActionResult> CreateAdvert(CreateProductDto createProductDto,GetLastProductDto getLastProductDto)
         {
             createProductDto.DealOfTheDay = false;
             createProductDto.advertDate = DateTime.Now;
@@ -80,13 +80,22 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
             var id = _loginService.GetUserId;
             createProductDto.UserID = int.Parse(id);
 
+
+
             var client = _httpClientFactory.CreateClient();
+     
             var jsonData = JsonConvert.SerializeObject(createProductDto);
+          
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PostAsync("https://localhost:44382/api/Products", stringContent);
-            if (responseMessage.IsSuccessStatusCode)
+            var client2 = _httpClientFactory.CreateClient();
+            var responseMessage2 = await client.GetAsync("https://localhost:44382/api/Products/GetLastProduct");
+
+            var jsonData2 = await responseMessage2.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<GetLastProductDto>(jsonData2);
+            if (responseMessage.IsSuccessStatusCode && responseMessage2.IsSuccessStatusCode)
             {
-                TempData["ProductID"] = createProductDto.UserID;
+                TempData["ProductID"] = values.ProductID;
                 return Redirect("https://localhost:44375/EstateAgent/MyAdverds/CreateAdvertDetail");
             }
             return View();
@@ -95,7 +104,7 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
         [HttpGet]
         public async Task<IActionResult> CreateAdvertDetail()
         {
-            // TempData'dan değeri aldığınızdan emin olun
+           
             if (TempData["ProductID"] != null)
             {
                 int productId = (int)TempData["ProductID"];
@@ -112,18 +121,72 @@ namespace RealEstate_Dapper_UI.Areas.EstateAgent.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateAdvertDetail(CreateProductDto createProductDto,int id)
+        public async Task<IActionResult> CreateAdvertDetail(CreateProductDetailDto createProductDetailDto)
         {
-         
+
+            createProductDetailDto.advertDate = DateTime.Now;
 
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createProductDto);
+            var jsonData = JsonConvert.SerializeObject(createProductDetailDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:44382/api/Products", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:44382/api/ProductDetailsApi/CreateProductDetail", stringContent); var client2 = _httpClientFactory.CreateClient();
+            var responseMessage2 = await client.GetAsync("https://localhost:44382/api/Products/GetLastProduct");
+
+            var jsonData2 = await responseMessage2.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<GetLastProductDto>(jsonData2);
+
             if (responseMessage.IsSuccessStatusCode)
             {
-                
-                return RedirectToAction("ActiveAdverts", "EstateAgent/MyAdverds");
+                TempData["ProductID"] = values.ProductID;
+                var responseData = await responseMessage.Content.ReadAsStringAsync();
+                TempData["ApiMessage"] = responseData; 
+                return Redirect("https://localhost:44375/EstateAgent/MyAdverds/CreateProductImage");
+            }
+            else
+            {
+                var errorMessage = await responseMessage.Content.ReadAsStringAsync();
+                TempData["ApiMessage"] = errorMessage; 
+            }
+
+            return View();
+
+        }
+        [HttpGet]
+        public async Task<IActionResult> CreateProductImage()
+        {
+
+            if (TempData["ProductID"] != null)
+            {
+                int productId = (int)TempData["ProductID"];
+                ViewBag.ProductID = productId;
+            }
+            else
+            {
+                // Hata durumunu yönetin
+                return RedirectToAction("Error");
+            }
+
+            return View();
+        }
+
+        public async Task<IActionResult> ChangeProductStatusAsActive(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responsemessage = await client.GetAsync("https://localhost:44382/api/Products/ProductStatusChangeToTrue/" + id);
+            if (responsemessage.IsSuccessStatusCode)
+            {
+                return Redirect("https://localhost:44375/EstateAgent/MyAdverds/ActiveAdverts");
+            }
+            return View();
+
+        }
+        public async Task<IActionResult>ChangeProductStatusAsPAssive(int id)
+        {
+            var client= _httpClientFactory.CreateClient();
+            var responsemessage = await client.GetAsync("https://localhost:44382/api/Products/ProductStatusAsPassive/" + id);
+            if(responsemessage.IsSuccessStatusCode)
+            {
+                return Redirect("https://localhost:44375/EstateAgent/MyAdverds/PassiveAdverts");
 
             }
             return View();

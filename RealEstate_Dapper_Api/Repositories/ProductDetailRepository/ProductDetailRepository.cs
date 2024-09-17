@@ -13,9 +13,9 @@ namespace RealEstate_Dapper_Api.Repositories.ProductDetailRepository
             _context = context;
         }
 
-        public async Task CreateProductDetail(CreateProductDetailDto createProductDetailDto, int id)
+        public async Task CreateProductDetail(CreateProductDetailDto createProductDetailDto)
         {
-            string query = "Insert Into ProductDetails (ProductSize,BedRoomCount,BathCount,RoomCount,GarageSize,BuildYear,Price,Location,VideoUrl) values (@psize,@bedcount,@bathcount,@roomcount,@garagesize,@buildyear,@price,@location,@videourl) where ProductID=@productid";
+            string query = "Insert Into ProductDetails (ProductSize,BedRoomCount,BathCount,RoomCount,GarageSize,BuildYear,Price,Location,VideoUrl,ProductID) values (@psize,@bedcount,@bathcount,@roomcount,@garagesize,@buildyear,@price,@location,@videourl,@productid)";
             var paramaters=new DynamicParameters();
             paramaters.Add("@psize", createProductDetailDto.ProductSize);
             paramaters.Add("@bedcount",createProductDetailDto.BedRoomCount);

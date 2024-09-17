@@ -121,6 +121,17 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
         }
 
+        public async Task<GetLastProductDto> GetLastProduct()
+        {
+            string query = " Select top(1)  ProductID From   Product order by ProductID desc";
+            using (var connection = _context.CreateConnection())
+            {
+                var values = await connection.QueryFirstOrDefaultAsync<GetLastProductDto>(query);
+                return values;
+
+            }
+        }
+
         public async Task<List<ResultProductAdvertListWithCategoryByEmployeeDto>> GetProductAdvertListByEmployeeAsyncByFalse(int id)
         {
             string query = "Select ProductID,Title,Price,City,District,CategoryName,CoverImage,Type,Adress,DealOfTheDay From Product inner join Category on Product.ProductCategory=Category.CategoryID where UserID=@employeeId and ProductStatus=0  ";
@@ -210,6 +221,24 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
             }
         }
 
+        public async Task ProductChangeAsActive(int id)
+        {
+            string query = "Update Product set ProductStatus=1 where ProductID=@productid ";
+            var parameters = new DynamicParameters();
+            parameters.Add("@productid", id);
+            using(var connection = _context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query, parameters);
+
+            }
+
+        }
+
+        public Task ProductChangeAsPassive(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task ProductDealOfTheDayStatusChangeFalse(int id)
         {
             string query = "Update Product Set DealOfTheDay=0 where ProductID=@productID";
@@ -231,6 +260,18 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
                await connection.ExecuteAsync(query, parameters);    
             }
         }
+
+        public async Task ProductStatusChangeAsPassive(int id)
+        {
+            string query = "Update Product Set ProductStatus=0 where ProductID=@productid";
+            var parameters = new DynamicParameters();
+            parameters.Add("@productid", id);
+            using(var connection=_context.CreateConnection())
+            {
+                await connection.ExecuteAsync(query,parameters);
+            }
+        }
+
 
         public async Task<List<ResultProductWithSearchListDto>> ResultProductWithSearchList(string searchKeyValue, int propertyCategoryId, string city)
         {
@@ -274,3 +315,5 @@ namespace RealEstate_Dapper_Api.Repositories.ProductRepository
 
     }
 }
+
+// Api tarafında işlem gerçekleştirlidi şimid bunu arayüze conusme etmeliyiz

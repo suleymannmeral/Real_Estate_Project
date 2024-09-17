@@ -6,6 +6,7 @@ namespace RealEstate_Dapper_Api.Repositories.ProductImageRepositories
     public interface IProductImageRepository
     {
         Task<List<ProductImageByProductIDDto>> GetProductImageByProductID(int id);
+        Task CreateProductImage(int id,CreateProductImageDto createProductImageDto);
 
     }
 }

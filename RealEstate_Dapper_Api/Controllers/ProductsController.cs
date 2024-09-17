@@ -142,8 +142,29 @@ namespace RealEstate_Dapper_Api.Controllers
             var values = await _productRepository.GetLast3ProductAsync();
             return Ok(values);
         }
+        [HttpGet("GetLastProduct")]
 
-     
+        public async Task<IActionResult> GetLastProduct()
+        {
+            var values = await _productRepository.GetLastProduct();
+            return Ok(values);
+        }
+        [HttpGet("ProductStatusChangeToTrue/{id}")]
+        public async Task<IActionResult> ChangeProductStatusAsActive(int id)
+        {
+             await _productRepository.ProductChangeAsActive(id);
+              return Ok("Product Status Changed Succesfully");
+        }
+        [HttpGet("ProductStatusAsPassive/{id}")]
+
+        public async Task<IActionResult> ChangeProductStatusAsPassive(int id)
+        {
+            await _productRepository.ProductStatusChangeAsPassive(id);
+            return Ok("Product Status Changed To Passive Succesfuly");
+        }
+
+
+
 
 
 

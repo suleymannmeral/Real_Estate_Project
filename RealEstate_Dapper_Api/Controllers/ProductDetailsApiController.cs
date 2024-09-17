@@ -24,10 +24,10 @@ namespace RealEstate_Dapper_Api.Controllers
             var values = await _productRepository.GetProductDetaByProductId(id);
             return Ok(values);
         }
-        [HttpPost("{id}")]
-        public async Task<IActionResult>CreateProductDetail(CreateProductDetailDto createProductDetailDto,int id)
+        [HttpPost("CreateProductDetail")]
+        public async Task<IActionResult>CreateProductDetail(CreateProductDetailDto createProductDetailDto)
         {
-            await _productDetailRepository.CreateProductDetail(createProductDetailDto,id);
+            await _productDetailRepository.CreateProductDetail(createProductDetailDto);
             return Ok("ProductDetail Başarıyla Eklendi");
         }
 

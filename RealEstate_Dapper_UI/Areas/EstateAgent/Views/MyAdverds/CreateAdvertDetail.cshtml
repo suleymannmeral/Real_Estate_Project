@@ -5,27 +5,57 @@
 }
 
 
+@if (TempData["ApiMessage"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["ApiMessage"]
+    </div>
+}
 
 
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
         <div class="col-12">
             <div class="bg-light rounded h-100 p-4">
-                <h6>İlan Detayları</h6>
-
-
-
-                <label>@ViewBag.ProductID</label>
-
-              
+                <h6>Yeni Kateori Eklem Sayfası</h6>
+                <form method="post">
+                    <label>Emlak Alanı</label>
+                    <input type="text" asp-for="ProductSize" class="form-control" />
+                    <br />
+                    <label>Yatak Odası Sayısı</label>
+                    <input type="text" asp-for="BedRoomCount" class="form-control" />
+                    <br /> 
+                    <label>Banyo Sayısı</label>
+                    <input type="text" asp-for="BathCount" class="form-control" />
+                    <br />
+                    <label>Oda Sayısı</label>
+                    <input type="text" asp-for="RoomCount" class="form-control" />
+                    <br />
+                    <label>Garaj Sayısı</label>
+                    <input type="text" asp-for="GarageSize" class="form-control" />
+                    <br />
+                    <label>Yapım Yılı</label>
+                    <input type="text" asp-for="BuildYear" class="form-control" />
+                    <br />
+                    <label>Fiyat</label>
+                    <input type="text" asp-for="Price" class="form-control" />
+                    <br />
+                    <label>Lokasyon</label>
+                    <input type="text" asp-for="Location" class="form-control" />
+                    <br />
+                    <label>Video Url</label>
+                    <input type="text" asp-for="VideoUrl" class="form-control" />
+                    <br />
+                    <label>Emlak ID</label>
+                    <input type="text" asp-for="ProductID" class="form-control" value="@ViewBag.ProductID"  />
+                    <br />
                     <button class="btn btn-primary">Kaydet</button>
 
-                
+                </form>
             </div>
         </div>
     </div>
 </div>
-
 
 
 

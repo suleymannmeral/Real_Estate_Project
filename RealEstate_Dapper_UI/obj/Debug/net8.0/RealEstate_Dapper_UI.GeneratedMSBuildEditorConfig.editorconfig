@@ -126,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcTXlBZHZlcmRzXENyZWF0ZUFkdmVydERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/EstateAgent/Views/MyAdverds/CreateProductImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcTXlBZHZlcmRzXENyZWF0ZVByb2R1Y3RJbWFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/suley/source/repos/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Areas/EstateAgent/Views/MyAdverds/PassiveAdverts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRXN0YXRlQWdlbnRcVmlld3NcTXlBZHZlcmRzXFBhc3NpdmVBZHZlcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

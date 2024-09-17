@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RealEstate_Dapper_Api.Dtos.ProductImageDtos;
 using RealEstate_Dapper_Api.Repositories.ProductImageRepositories;
 
 namespace RealEstate_Dapper_Api.Controllers
@@ -20,6 +21,13 @@ namespace RealEstate_Dapper_Api.Controllers
         {
             var values=await _productImageRepository.GetProductImageByProductID(id);
             return Ok (values);
+        } 
+        [HttpPost]
+
+        public async Task<IActionResult>CreateProductImage(int id,CreateProductImageDto createProductImageDto)
+        {
+            await _productImageRepository.CreateProductImage(id,createProductImageDto);
+            return Ok("İmage Added Succesfully");
         }
     }
 }
